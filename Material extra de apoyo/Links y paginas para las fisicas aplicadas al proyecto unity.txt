@@ -1,0 +1,15 @@
+https://youtu.be/qqnqBQZOR34     -> Apoyo y posible idea para la mecanica entre posibles mundos, deberiamos ver la forma de hacer esos cambios como viajes espaciales.
+
+https://youtu.be/QNrjTWK4x8Q     -> Script de manipulacion e implementacion de la gravedad, podriamos ver q dependiendo del mundo, el indice de gravedad varie o incluso implementar la accion de una orbita(ideas relocas)
+
+https://answers.unity.com/questions/307761/how-can-i-apply-gravity-to-a-game-object-so-that-i.html      -> foro de unity, especificammente para la manipulacion de gravedad en un objeto
+
+.
+
+.
+
+.
+
+.
+
+.

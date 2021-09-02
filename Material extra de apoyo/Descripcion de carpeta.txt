@@ -1,0 +1,1 @@
+En esta carpeta se encuentra el material usado exclusivamente para el desarrollo del videojuego, donde tomamos diferentes ideas o metodos de aplicacion.
