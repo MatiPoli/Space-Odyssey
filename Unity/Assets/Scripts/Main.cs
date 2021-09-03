@@ -8,6 +8,7 @@ public class Main : MonoBehaviour
     public float velocidad = 100;
     public GameObject planeta = null; // Planeta actual
     public float size;
+    // public Rigidbody player;
 
     // Use this for initialization
     void Start()
@@ -22,6 +23,7 @@ public class Main : MonoBehaviour
         if (Input.GetKey(KeyCode.S)) { transform.Translate(new Vector3(0, 0, -velocidad * Time.deltaTime)); }
         if (Input.GetKey(KeyCode.A)) { transform.Rotate(new Vector3(0, -velocidad * Time.deltaTime, 0)); }
         if (Input.GetKey(KeyCode.D)) { transform.Rotate(new Vector3(0, velocidad * Time.deltaTime, 0)); }
+        // if (Input.GetKeyDown(KeyCode.Space)) { player.AddForce(transform.up * 500000); } -> hay que ver el error!!!!!
     }
     void aplicarGravedad()
     {
@@ -37,7 +39,7 @@ public class Main : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Escape)){ SceneManager.LoadScene("Scenes/Menu");} // Solucion temporal para salir del juego
-        mover();
         aplicarGravedad();
+        mover();
     }
 }

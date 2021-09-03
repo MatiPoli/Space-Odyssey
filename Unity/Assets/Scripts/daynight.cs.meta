@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: ab47ce2b23637654f997343912388dd4
+guid: 175f6f87fe377d74ca1fe5187e068a9f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - planeta: {fileID: 1659934759046340, guid: 1885272d02befb3429e46bfb5a828167, type: 3}
-  - fgt: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
