@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+
 
 public class Inventario : MonoBehaviour
 {
@@ -86,9 +89,13 @@ public class Inventario : MonoBehaviour
                 itemObject.transform.parent = slot[i].transform;
                 itemObject.SetActive(false);
 
-                slot[i].GetComponent<Slot>().empty = false;
-            }
 
+                slot[i].GetComponent<Slot>().UpdateSlot();
+
+                slot[i].GetComponent<Slot>().empty = false;
+
+            }
+            return;
 
         }
 
