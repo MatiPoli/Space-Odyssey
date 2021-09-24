@@ -5,7 +5,7 @@ using UnityEngine;
 public class daynight : MonoBehaviour
 {
 
-    public int rotationscale = 5;
+    public float rotationscale = 0.5f;
 
     // Update is called once per frame
     void Update()

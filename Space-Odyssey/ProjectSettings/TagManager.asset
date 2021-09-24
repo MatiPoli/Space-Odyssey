@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Item
   - Main menu
+  - Fire
+  - WeaponManager
   layers:
   - Default
   - TransparentFX
