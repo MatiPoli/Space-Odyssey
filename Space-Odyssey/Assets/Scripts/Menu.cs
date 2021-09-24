@@ -16,13 +16,15 @@ public class Menu : MonoBehaviour
     }
     public void LoadScene(string sceneName)   //Function that loads a new scene
     {
+        if (sceneName == "Espacio")
+            Destroy(GameObject.FindGameObjectWithTag("Main menu"));
         SceneManager.LoadScene(sceneName);
     }
 
     [SerializeField] Slider volumeSlider;
     void Start()
     {
-     if(!PlayerPrefs.HasKey("musicVolume"))
+        if (!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
             Load();
