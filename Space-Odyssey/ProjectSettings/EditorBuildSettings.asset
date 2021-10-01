@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: c93022e85e47b524aa03b66d28828961
+  - enabled: 0
     path: Assets/Scenes/Alolea.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -17,12 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Espacio.unity
     guid: a6baaf5296e8ef048a82776c91726167
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/New Scene.unity
     guid: bb69f36e0a9f1644b9806e02803d020c
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: c93022e85e47b524aa03b66d28828961
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 5d8fd82132c5aa141908de316b6038ff
@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Orange.unity
     guid: 0399a4cf00a696942adf19a2cd872b7e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 149cb82c3b98d684fb70609c6fff3217
   m_configObjects: {}
