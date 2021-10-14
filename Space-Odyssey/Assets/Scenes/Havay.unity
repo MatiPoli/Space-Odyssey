@@ -2704,9 +2704,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab47ce2b23637654f997343912388dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 100
+  velocidad: 60
   planeta: {fileID: 605588335605506772}
-  fuerzaSalto: 1500000
+  fuerzaSalto: 750000
 --- !u!1 &1774793103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,7 +3218,7 @@ SphereCollider:
   m_GameObject: {fileID: 605588335605506772}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 4.7371645
   m_Center: {x: -0.4856386, y: 0.40604046, z: -0.6199657}
