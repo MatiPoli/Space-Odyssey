@@ -32,7 +32,7 @@ public class Nave : MonoBehaviour
         if (nombre == "lowpoly_earth")
             SceneManager.LoadScene("Scenes/Juego");
         else
-            SceneManager.LoadScene("Scenes/" + char.ToUpper(nombre[0]) + nombre.Substring(1));
+            SceneManager.LoadScene("Scenes/Planetas/" + char.ToUpper(nombre[0]) + nombre.Substring(1));
     }
 
     // Update is called once per frame
