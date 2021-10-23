@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Combustible_Nave : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class Combustible_Nave : MonoBehaviour
     }
     
     if( GetComponent<Image>().fillAmount == 0){
-        Debug.Break();
+        SceneManager.LoadScene (sceneName:"Game Over");
     }
 
     
