@@ -6,28 +6,12 @@ public class ControlAnimacion : MonoBehaviour
 {
     Animator animator;
     public GameObject planeta;
-    private bool enPiso=true;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-     void OnCollisionEnter(Collision col)
-    {
-        if(col.gameObject == planeta)
-        {
-            enPiso=true;
-        }
-    }
-
-    void OnCollisionExit(Collision col)
-    {
-        if(col.gameObject == planeta)
-        {
-            enPiso=false;
-        }
-    }
     // Update is called once per frame
     void Update()
     {
