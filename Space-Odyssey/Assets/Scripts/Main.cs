@@ -7,7 +7,7 @@ public class Main : MonoBehaviour
 {
     public float velocidad = 50;
     public float sensibilidad = 10;
-    public GameObject planeta; // Planeta actual
+    public Transform planeta; // Planeta actual
     private Rigidbody rb;
     private bool enPiso=true;
     private Vector3 movimiento;
@@ -34,7 +34,7 @@ public class Main : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject == planeta)
+        if(col.transform == planeta.gameObject)
         {
             enPiso=true;
         }
@@ -42,7 +42,7 @@ public class Main : MonoBehaviour
 
     void OnCollisionExit(Collision col)
     {
-        if(col.gameObject == planeta)
+        if(col.gameObject == planeta.gameObject)
         {
             enPiso=false;
         }
@@ -52,7 +52,7 @@ public class Main : MonoBehaviour
     {
         if (planeta == null)
             return;
-        Physics.gravity = planeta.transform.position - transform.position;  // Hace que el vector gravedad siempre apunte al centro del planeta.
+        Physics.gravity = planeta.position - transform.position;  // Hace que el vector gravedad siempre apunte al centro del planeta.
         transform.rotation = Quaternion.FromToRotation(transform.up, -Physics.gravity) * transform.rotation; // Alinea el eje Y del personaje con el vector gravedad del planeta.
     }
 
