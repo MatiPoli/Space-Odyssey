@@ -5,7 +5,6 @@ using UnityEngine;
 public class Gravedad : MonoBehaviour
 {
     public Atractor atractor;
-    public float g = 9.81f;
     Rigidbody rb;
 
     // Start is called before the first frame update
@@ -15,7 +14,7 @@ public class Gravedad : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotation;
         rb.useGravity = false;
     }
-    private void Update()
+    void FixedUpdate()
     {
         atractor.atraer(this.gameObject);
     }

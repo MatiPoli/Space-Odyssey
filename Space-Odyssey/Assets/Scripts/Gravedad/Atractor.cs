@@ -9,7 +9,7 @@ public class Atractor : MonoBehaviour
     // Start is called before the first frame update
     public void atraer(GameObject body)
     {
-        Vector3 gravity = -(body.transform.position - transform.position).normalized;
+        Vector3 gravity = (body.transform.position - transform.position).normalized;
 
         body.GetComponent<Rigidbody>().AddForce(gravity * G);
 
