@@ -18,13 +18,12 @@ public class Item : MonoBehaviour
     [HideInInspector]
     public bool equiped;
 
-    [HideInInspector]
-    public GameObject weaponManager;
 
     [HideInInspector]
     public GameObject weapon;
 
-
+    [HideInInspector]
+    public GameObject weaponManager;
 
     public bool playersWeapon;
 
@@ -48,13 +47,11 @@ public class Item : MonoBehaviour
 
     }
 
-
-
     private void Update()
     {
         if (equiped)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown("e"))
             {
                 equiped = false;
             }
@@ -81,5 +78,7 @@ public class Item : MonoBehaviour
 
 
     }
+
+
 
 }
