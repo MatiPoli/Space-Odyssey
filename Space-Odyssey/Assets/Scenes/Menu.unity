@@ -958,6 +958,7 @@ GameObject:
   - component: {fileID: 966568927}
   - component: {fileID: 966568926}
   - component: {fileID: 966568925}
+  - component: {fileID: 966568928}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -1040,6 +1041,18 @@ MonoBehaviour:
           m_StringArgument: Loading
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 966568928}
+        m_TargetAssemblyTypeName: newGameReset, Assembly-CSharp
+        m_MethodName: SaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &966568926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,6 +1091,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966568923}
   m_CullTransparentMesh: 0
+--- !u!114 &966568928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966568923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f87dc2eac720c4a9c30c2ea514cefc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1024968102
 GameObject:
   m_ObjectHideFlags: 0
