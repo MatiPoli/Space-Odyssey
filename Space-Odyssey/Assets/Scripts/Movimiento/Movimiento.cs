@@ -43,15 +43,14 @@ public class Movimiento : MonoBehaviour
 
         //if (cam != null)
         //{
-            //animator.SetBool("isWalking", true);
-            //float targetAngle = Mathf.Atan2(direcson.x, direcson.z) * Mathf.Rad2Deg + cam.transform.eulerAngles.y;
-            //float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            //transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-            //moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+        //    float targetAngle = Mathf.Atan2(direcson.x, direcson.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+        //    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+        //    transform.rotation = Quaternion.Euler(0f, angle, 0f);
+        //
+        //   moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
         //}
 
         //cam.transform.Translate(direcson * velocidad * Time.deltaTime);
-        rb.MovePosition(rb.position + (moveDir.normalized * velocidad * Time.deltaTime));
+        transform.Translate(moveDir.normalized * velocidad * Time.deltaTime);
     }
 }
