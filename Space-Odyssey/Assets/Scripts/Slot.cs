@@ -17,20 +17,14 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public Transform slotIconGameObject;
 
-
     private void Start()
     {
         slotIconGameObject = transform.GetChild(0);
     }
 
-
-    public void UpdateSlot()
-    {
-
+    public void UpdateSlot(){
         slotIconGameObject.GetComponent<Image>().sprite = icon;
-
     }
-
 
 
     public void UseItem()
@@ -44,6 +38,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler
         UseItem();
 
     }
+
 
 
 }
