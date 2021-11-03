@@ -12,6 +12,7 @@ public class Movimiento : MonoBehaviour
     float turnSmoothVelocity;
     [SerializeField]
     float rotationSpeed = 10;
+    public Transform planeta;
     //Animator animator;
 
     // Start is called before the first frame update

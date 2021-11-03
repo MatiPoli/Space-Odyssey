@@ -6,11 +6,14 @@ using Cinemachine;
 public class PlayerAimController : MonoBehaviour
 {
     [SerializeField]
-    private CinemachineVirtualCamera main_camera;
+    public CinemachineFreeLook main_camera;
     [SerializeField]
     private int priorityBoostCam=10;
     [SerializeField]
     private GameObject crosshair;
+
+    [SerializeField]
+    Transform player;
 
     bool apuntando=false;
 
