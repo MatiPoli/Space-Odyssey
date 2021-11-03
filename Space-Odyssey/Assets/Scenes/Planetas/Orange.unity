@@ -2860,7 +2860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748987931}
   m_LocalRotation: {x: -0.6494097, y: -0, z: -0, w: 0.76043874}
-  m_LocalPosition: {x: 48.2, y: 24, z: 316}
+  m_LocalPosition: {x: 48.2, y: -33.8, z: 316}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 963194228}
@@ -2880,7 +2880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 40
-  planeta: {fileID: 2068721899}
+  sensibilidad: 10
+  planeta: {fileID: 2068425931}
   fuerzaSalto: 500000
 --- !u!114 &1748987938
 MonoBehaviour:

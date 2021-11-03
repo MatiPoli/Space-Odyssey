@@ -34,7 +34,7 @@ public class Main : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.transform == planeta.gameObject)
+        if(col.gameObject == planeta.gameObject)
         {
             enPiso=true;
         }
