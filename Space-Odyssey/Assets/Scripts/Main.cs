@@ -9,9 +9,12 @@ public class Main : MonoBehaviour
     public float sensibilidad = 10;
     public Transform planeta; // Planeta actual
     private Rigidbody rb;
-    private bool enPiso=true;
     private Vector3 movimiento;
     public float fuerzaSalto = 50000f;
+
+    [HideInInspector]
+    public bool enPiso=true;
+    public bool saltando=false;
 
     // Use this for initialization
     void Start()
@@ -28,7 +31,7 @@ public class Main : MonoBehaviour
         transform.Translate(movimiento * velocidad * Time.deltaTime);
         if (hori<0) { transform.Rotate(new Vector3(0, -sensibilidad * Time.deltaTime, 0)); }
         if (hori>0) { transform.Rotate(new Vector3(0, sensibilidad * Time.deltaTime, 0)); }
-        if (Input.GetKeyDown(KeyCode.Space) && enPiso) { rb.AddForce(transform.up * fuerzaSalto); }
+        if (Input.GetKeyDown(KeyCode.Space) && enPiso) { rb.AddForce(transform.up * fuerzaSalto); saltando=true;}
         
     }
 
@@ -37,6 +40,7 @@ public class Main : MonoBehaviour
         if(col.gameObject == planeta.gameObject)
         {
             enPiso=true;
+            saltando=false;
         }
     }
 
