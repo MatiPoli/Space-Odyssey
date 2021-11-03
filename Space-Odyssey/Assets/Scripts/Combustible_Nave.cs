@@ -5,15 +5,40 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Combustible_Nave : MonoBehaviour
-{
+{ 
     public string gasolinaPrefsName = "gaso";
+    // public string inicio = "inic";
 
+    public int iniciamosSN = 0;
+
+    public string inicio = "inic" ;
 
     private void Awake()
     {
-        LoadData();
-        if (GetComponent<Image>().fillAmount == 0)
-            GetComponent<Image>().fillAmount = 1;
+        
+        iniciamosSN = PlayerPrefs.GetInt(inicio, 0);
+
+        if (iniciamosSN == 1)
+        {
+            PlayerPrefs.SetFloat(gasolinaPrefsName, 1f);
+            PlayerPrefs.SetFloat(inicio, 0);
+        }
+        else
+        {
+            iniciamosSN = 0;
+            if (GetComponent<Image>().fillAmount == 0)
+                GetComponent<Image>().fillAmount = 1f;
+
+        }
+            LoadData();
+
+        
+        
+      
+
+
+
+
     }
 
     public void resetAll()
@@ -30,8 +55,7 @@ public class Combustible_Nave : MonoBehaviour
     void Update(){
 
     if (Input.GetKey("w")){
-        GetComponent<Image>().fillAmount -= 0.01f; 
-
+        GetComponent<Image>().fillAmount -= 0.0001f; 
     }
 
     if( GetComponent<Image>().fillAmount < 0.5f){
@@ -67,3 +91,5 @@ public class Combustible_Nave : MonoBehaviour
 
 
 }
+
+
