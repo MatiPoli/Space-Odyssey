@@ -10,6 +10,9 @@ public class Movimiento : MonoBehaviour
     Vector3 movimiento;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+    [SerializeField]
+    float rotationSpeed = 10;
+    public Transform planeta;
     //Animator animator;
 
     // Start is called before the first frame update
@@ -23,12 +26,12 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movimiento = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
+        movimiento = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
     }
 
     void FixedUpdate()
     {
-        mover(movimiento);    
+        mover(movimiento);
     }
 
     void mover(Vector3 direcson)
@@ -39,7 +42,8 @@ public class Movimiento : MonoBehaviour
             return;
         }
 
-        Vector3 moveDir = direcson;
+        Vector3 moveDir = direcson;//cam.TransformDirection(direcson);
+        moveDir.y = 0;
 
         //if (cam != null)
         //{
@@ -51,6 +55,8 @@ public class Movimiento : MonoBehaviour
         //}
 
         //cam.transform.Translate(direcson * velocidad * Time.deltaTime);
+
         transform.Translate(moveDir.normalized * velocidad * Time.deltaTime);
+
     }
 }
