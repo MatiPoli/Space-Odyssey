@@ -6374,8 +6374,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 100
   sensibilidad: 10
-  planeta: {fileID: 7641197977151419726}
+  planeta: {fileID: 7638153851623522120}
   fuerzaSalto: 500000
+  enPiso: 1
+  saltando: 0
 --- !u!114 &1748987938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7425,7 +7427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef77aa203bfaad641a5d54a552ebb3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planeta: {fileID: 0}
+  Padre: {fileID: 1748987931}
 --- !u!136 &1516073444362900853
 CapsuleCollider:
   m_ObjectHideFlags: 0
