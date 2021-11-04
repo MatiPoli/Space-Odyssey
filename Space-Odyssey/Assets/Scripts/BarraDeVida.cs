@@ -13,7 +13,7 @@ public class BarraDeVida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	vidaActual = GetComponent<Variables>().vida; 
+    	vidaActual = GetComponent<Variables>().getVida(); 
         barraDeVida.fillAmount = vidaActual / vidaMaxima;
 
         if(barraDeVida.GetComponent<Image>().fillAmount == 0){
