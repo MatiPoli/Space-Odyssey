@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemigo : DamageTarget
 {
-    public override void recibirDanio(int danio)
+    public override void recibirDanio(float danio)
     {
         base.recibirDanio(danio);
         // Animacion de daño

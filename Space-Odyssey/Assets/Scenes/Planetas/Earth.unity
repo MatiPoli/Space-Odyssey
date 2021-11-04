@@ -894,6 +894,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -1190,6 +1191,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -1332,6 +1334,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -1762,6 +1765,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -3035,6 +3039,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -3577,6 +3582,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -3831,6 +3837,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -4311,6 +4318,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -4915,6 +4923,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -5542,6 +5551,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -6035,6 +6045,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -6778,6 +6789,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -7182,6 +7194,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -7197,9 +7210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92de9c959a01e6842b5e7cdb8cf581b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
+  maxVida: 100
   oxigeno: 100
-  sinOx: 0
+  oxigenoPorSegundo: 0.001
+  oxigenoPorMovimiento: 0.01
 --- !u!114 &1748987944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7214,7 +7228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barraDeOxigeno: {fileID: 639022101}
   oxigenoMaximo: 100
-  sinOxigeno: 0
+  sinOxigeno: 1
 --- !u!1 &1773043700
 GameObject:
   m_ObjectHideFlags: 0
@@ -7483,6 +7497,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -7645,6 +7660,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -8095,6 +8111,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -8237,6 +8254,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -8379,6 +8397,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
+  texto: {fileID: 0}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
@@ -9774,9 +9793,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92de9c959a01e6842b5e7cdb8cf581b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
+  maxVida: 100
   oxigeno: 0
-  sinOx: 0
+  oxigenoPorSegundo: 0.001
+  oxigenoPorMovimiento: 0.01
 --- !u!1 &6731222009550222207
 GameObject:
   m_ObjectHideFlags: 0
