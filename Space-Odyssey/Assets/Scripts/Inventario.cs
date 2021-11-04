@@ -64,7 +64,7 @@ public class Inventario : MonoBehaviour
             if(slot[i].GetComponent<Slot>().ID == itemID){
                 slot[i].GetComponent<Slot>().cantidad += 1;
                 string c = "" + slot[i].GetComponent<Slot>().cantidad;
-                slot[i].GetChild(2).GetComponent<>().Text = c; //
+               // slot[i].GetChild(2).GetComponent<>().Text = c; 
                 itemObject.SetActive(false);
                 break;
             }
