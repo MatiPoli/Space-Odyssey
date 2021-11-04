@@ -1376,7 +1376,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.058288574, y: -0.099, z: 1.88}
   m_LocalScale: {x: 0.099999994, y: 0.099999964, z: 0.09999998}
-  m_Children: []
+  m_Children:
+  - {fileID: 3832703582652269920}
   m_Father: {fileID: 847770068}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 14.49, y: 0, z: 0}
@@ -1507,7 +1508,6 @@ GameObject:
   - component: {fileID: 847770068}
   - component: {fileID: 847770070}
   - component: {fileID: 847770069}
-  - component: {fileID: 847770072}
   - component: {fileID: 847770073}
   m_Layer: 0
   m_Name: Player
@@ -1532,7 +1532,6 @@ Transform:
   - {fileID: 1071096209}
   - {fileID: 1094771758}
   - {fileID: 2048536320}
-  - {fileID: 3832703582652269920}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1572,23 +1571,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!114 &847770072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847770067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1bae3dc7b4138e479740cb9fc190f51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackRange: 100
-  attackDamage: 25
-  attackRate: 8
-  bulletOrigin: {fileID: 715322168}
-  muzzleFlash: {fileID: 1173169109}
 --- !u!114 &847770073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7990,7 +7972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048536319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.058288574, y: -0.4791479, z: 1.9674072}
+  m_LocalPosition: {x: -0.058288574, y: -0.4791479, z: 4.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 847770068}
@@ -8237,16 +8219,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3832703582652373312}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.2919922, y: -0.7620001, z: 2.5648193}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.5028079, y: -6.6300035, z: 6.8481946}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 3832703582652269922}
   - {fileID: 3832703582652269924}
   - {fileID: 3832703582652269926}
   - {fileID: 3832703582652269928}
   - {fileID: 1173169107}
-  m_Father: {fileID: 847770068}
-  m_RootOrder: 5
+  m_Father: {fileID: 715322168}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &3832703582652269922
 Transform:
@@ -8314,6 +8296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3832703582652269920}
+  - component: {fileID: 3832703582652373313}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -8321,6 +8304,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3832703582652373313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3832703582652373312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1bae3dc7b4138e479740cb9fc190f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 100
+  attackDamage: 25
+  attackRate: 8
+  bulletOrigin: {fileID: 715322168}
+  muzzleFlash: {fileID: 1173169109}
 --- !u!1 &3832703582652373314
 GameObject:
   m_ObjectHideFlags: 0
