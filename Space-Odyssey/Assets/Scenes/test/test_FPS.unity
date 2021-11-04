@@ -2043,7 +2043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1114064447
 Transform:
   m_ObjectHideFlags: 0
@@ -2086,7 +2086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef77aa203bfaad641a5d54a552ebb3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planeta: {fileID: 0}
+  Padre: {fileID: 0}
 --- !u!95 &1114064450
 Animator:
   serializedVersion: 3
