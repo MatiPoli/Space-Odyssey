@@ -9,9 +9,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 {
     public GameObject item;
     public int ID;
+    public int cantidad;
     public string type;
     public string descripcion;
-
+    public Text texto;
     public bool empty;
     public Sprite icon;
 
