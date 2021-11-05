@@ -19,12 +19,6 @@ public class DamageTarget : MonoBehaviour
         return this.vida;
     }
 
-    public void subirVida(float valor) {
-
-        vida = valor;
-
-    }
-
     public virtual void recibirDanio(float danio)
     {
         vida -= danio;
