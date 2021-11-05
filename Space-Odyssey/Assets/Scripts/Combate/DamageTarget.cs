@@ -11,13 +11,24 @@ public class DamageTarget : MonoBehaviour
 
     protected void Start()
     {
-        vida = maxVida;
+
     }
 
     public float getVida()
     {
         return this.vida;
     }
+
+    public float getMaxVida()
+    {
+        return this.maxVida;
+    }
+
+    public void actualizarVida(float vidaNueva)
+    {
+        this.vida = vidaNueva;
+    }
+
 
     public virtual void recibirDanio(float danio)
     {
