@@ -59,7 +59,15 @@ public class Inventario : MonoBehaviour
     }
 
     public void AddItem(GameObject itemObject, int itemID, string itemType, string iteamDescription, Sprite itemIcon){
+        
         for(int i = 0; i < allSlots; i++){
+            if(slot[i].GetComponent<Slot>().ID == itemID){
+                slot[i].GetComponent<Slot>().cantidad += 1;
+                string c = "" + slot[i].GetComponent<Slot>().cantidad;
+               // slot[i].GetChild(2).GetComponent<>().Text = c; 
+                itemObject.SetActive(false);
+                break;
+            }
             if (slot[i].GetComponent<Slot>().empty){
                 itemObject.GetComponent<Item>().pickedUp = true;
                 slot[i].GetComponent<Slot>().item = itemObject;
@@ -72,10 +80,14 @@ public class Inventario : MonoBehaviour
                 itemObject.SetActive(false);
 
                 slot[i].GetComponent<Slot>().UpdateSlot();
+                slot[i].GetComponent<Slot>().cantidad = 1;
 
                 slot[i].GetComponent<Slot>().empty = false;
                 break;
             }
+
+            
+            
             
         }
         

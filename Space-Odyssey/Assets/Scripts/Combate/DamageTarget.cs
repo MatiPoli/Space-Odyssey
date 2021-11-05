@@ -6,32 +6,37 @@ public class DamageTarget : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public int maxVida = 100;
-    protected int vida;
+    public float maxVida = 100;
+    protected float vida;
 
-    void Start()
+    protected void Start()
     {
         vida = maxVida;
     }
 
-    public virtual void recibirDanio(int danio)
+    public float getVida()
+    {
+        return this.vida;
+    }
+
+    public virtual void recibirDanio(float danio)
     {
         vida -= danio;
 
         // Animacion de daño
 
-        if (vida <= 0)
+        if (vida <= 0f)
             die();
     }
 
     // Update is called once per frame
-    void Update()
+    protected void Update()
     {
-        
+        //Debug.Log(vida);   
     }
 
     protected virtual void die()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 }

@@ -10,6 +10,7 @@ public class BarraDeOxigeno : MonoBehaviour
     private float oxigenoActual;
     public float oxigenoMaximo;
     private float tiempo;
+    public bool sinOxigeno = false;
 
     // Update is called once per frame
     void Update()
@@ -18,8 +19,16 @@ public class BarraDeOxigeno : MonoBehaviour
     	oxigenoActual = GetComponent<Variables>().oxigeno;    	
         barraDeOxigeno.fillAmount = oxigenoActual / oxigenoMaximo;
 
-        if(barraDeOxigeno.GetComponent<Image>().fillAmount == 0){
-        SceneManager.LoadScene (sceneName:"Game Over");
-    }
+        
+        if(barraDeOxigeno.GetComponent<Image>().fillAmount <= 0){
+        	//SceneManager.LoadScene (sceneName:"Game Over");
+        	sinOxigeno = true;
+    	}
+    	/*
+    	if(oxigenoActual == 0) {
+    		sinOxigeno = true; 
+    	}
+    	*/
+
     }
 }
