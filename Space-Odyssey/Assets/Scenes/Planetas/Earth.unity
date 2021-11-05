@@ -7133,7 +7133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barraDeVida: {fileID: 248669546}
-  vidaMaxima: 100
 --- !u!114 &1748987941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7212,8 +7211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVida: 100
   oxigeno: 100
-  oxigenoPorSegundo: 0.001
-  oxigenoPorMovimiento: 0.01
+  oxigenoPorSegundo: 0.5
+  oxigenoPorSegundoAlMoverse: 1
 --- !u!114 &1748987944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9796,7 +9795,7 @@ MonoBehaviour:
   maxVida: 100
   oxigeno: 0
   oxigenoPorSegundo: 0.001
-  oxigenoPorMovimiento: 0.01
+  oxigenoPorSegundoAlMoverse: 0.01
 --- !u!1 &6731222009550222207
 GameObject:
   m_ObjectHideFlags: 0

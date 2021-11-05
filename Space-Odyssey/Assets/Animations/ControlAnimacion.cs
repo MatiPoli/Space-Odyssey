@@ -27,7 +27,11 @@ public class ControlAnimacion : MonoBehaviour
         enPiso = script.enPiso;
         saltando = script.saltando;
         bool isJumping = animator.GetBool("isJumping");
-        Debug.Log(isJumping);
+
+        // Moises tardo 40 años en atravesar el desierto, los franceses tardaron 116 años en retomar sus tierras de los ingleses,
+        // pero a mi me llevo muchisimo mas tiempo encontrar este debug asqueroso.
+        //Debug.Log(isJumping);
+        
         bool isWalking = animator.GetBool("isWalking");
         bool isWalkingBackwards = animator.GetBool("isWalkingBackwards");
         bool forwardPressed = Input.GetKey("w");
