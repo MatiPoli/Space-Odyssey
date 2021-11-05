@@ -3,23 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Variables : MonoBehaviour
+public class Variables : DamageTarget
 {
-    public float vida;
     public float oxigeno;
     private float tiempo, tiempoSinOx;
-    public bool sinOx = false;
+
+	[Header("Consumo de oxigeno")]
+    public float oxigenoPorSegundo=0.001f;
+	public float oxigenoPorMovimiento=0.01f;
+
+	bool sinOx = false;
 
 
-    public void reducirOxigeno() { //lo uso para que se ahogue
-
-    	oxigeno = oxigeno - 0.05f;
-
+    public void reducirOxigeno(float amount) { //lo uso para que se ahogue
+    	if(oxigeno>0)
+			oxigeno -= amount;
+		else
+			sinOx=true;
     }
 
     void Start()
     {
-    	vida = 100;
+		base.Start();
     	oxigeno = 100;
     }
 
@@ -30,15 +35,15 @@ public class Variables : MonoBehaviour
 
     	//si se mueve el oxigeno se consume más rapido
     	if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) {
-    		oxigeno = oxigeno - 0.01f;
+    		reducirOxigeno(oxigenoPorMovimiento);
     	} else {
-    		oxigeno = oxigeno - 0.001f;
+    		reducirOxigeno(oxigenoPorSegundo);
     	}
 
-    	sinOx = GetComponent<BarraDeOxigeno>().sinOxigeno;
-    	if(sinOx) {
+		if(sinOx) {
     		tiempoSinOx += Time.deltaTime; 
-    		vida = vida - (tiempoSinOx/1000); //disminuye proporcionalmente al tiempo
+    		this.recibirDanio(tiempoSinOx/1000); //disminuye proporcionalmente al tiempo
+			Debug.Log(this.getVida());
     	} else {
     		sinOx = false; // para cuando este el sistema de recargar oxigeno
     		tiempoSinOx = 0.0f;

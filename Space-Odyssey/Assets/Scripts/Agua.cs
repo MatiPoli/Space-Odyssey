@@ -34,11 +34,11 @@ public class Agua : MonoBehaviour
             tiempo += Time.deltaTime;
 
 
-            Debug.Log(tiempo);
+            //Debug.Log(tiempo);
             if(tiempo >= limiteTiempo){
 
                 //oxigenoActual = GetComponent<Variables>().oxigeno
-                jugador.GetComponent<Variables>().reducirOxigeno();
+                jugador.GetComponent<Variables>().reducirOxigeno(0.05f);
                 //Destroy(jugador);
                 tiempoEntero = (int)tiempo;
                 if(tiempoEntero % 2 == 0) {

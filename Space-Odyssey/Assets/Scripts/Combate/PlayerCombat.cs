@@ -10,7 +10,7 @@ public abstract class PlayerCombat : MonoBehaviour
     float nextAttackTime = 0;
 
     // Update is called once per frame
-    void Update()
+    virtual protected void Update()
     {
         if (Time.time >= nextAttackTime && Input.GetMouseButtonDown(0))
         {

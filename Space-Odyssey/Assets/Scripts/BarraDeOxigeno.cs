@@ -20,7 +20,7 @@ public class BarraDeOxigeno : MonoBehaviour
         barraDeOxigeno.fillAmount = oxigenoActual / oxigenoMaximo;
 
         
-        if(barraDeOxigeno.GetComponent<Image>().fillAmount == 0){
+        if(barraDeOxigeno.GetComponent<Image>().fillAmount <= 0){
         	//SceneManager.LoadScene (sceneName:"Game Over");
         	sinOxigeno = true;
     	}
