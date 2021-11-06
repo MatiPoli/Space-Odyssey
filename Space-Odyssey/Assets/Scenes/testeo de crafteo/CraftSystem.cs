@@ -22,13 +22,20 @@ public class CraftSystem : MonoBehaviour
 
 public void Craft (int a){
     for(int i=0; i < itemsCraft.Length; i++){
-        if(itemsCraft[i].ID == a && Materials.shd.Wood >= itemsCraft[i].RequiredWood && Materials.shd.Steel >= itemsCraft[i].RequiredSteel  && Materials.shd.Rock >= itemsCraft[i].RequiredRock ){
+        if(itemsCraft[i].ID == a && Materials.shd.Wood >= itemsCraft[i].RequiredWood && Materials.shd.Steel >= itemsCraft[i].RequiredSteel && Materials.shd.Rock >= itemsCraft[i].RequiredRock /* BORRAR LO ANTERIOR PLS */ && Materials.shd.Water >= itemsCraft[i].RequiredWater && Materials.shd.Plant >= itemsCraft[i].RequiredPlant && Materials.shd.Iron >= itemsCraft[i].RequiredIron && Materials.shd.Petroleum >= itemsCraft[i].RequiredPetroleum){
         Instantiate(itemsCraft[i].prefab, CraftPos.position, CraftPos.rotation, null);
             print(itemsCraft[i].name + " Crafteado");
 
             Materials.shd.Wood -= itemsCraft[i].RequiredWood;
             Materials.shd.Steel -= itemsCraft[i].RequiredSteel;
             Materials.shd.Rock -= itemsCraft[i].RequiredRock;
+
+            //BORRAR LO DE ARRIBAA
+
+            Materials.shd.Water -= itemsCraft[i].RequiredWater;
+            Materials.shd.Plant -= itemsCraft[i].RequiredPlant;
+            Materials.shd.Petroleum -= itemsCraft[i].RequiredPetroleum;
+            Materials.shd.Iron -= itemsCraft[i].RequiredIron;
 
         }
     }
@@ -47,6 +54,11 @@ public class Items{
     public int RequiredWood;
     public int RequiredSteel;
     public int RequiredRock;
+
+    public int RequiredWater;
+    public int RequiredPlant;
+    public int RequiredPetroleum;
+    public int RequiredIron;
 
     public GameObject prefab;
 

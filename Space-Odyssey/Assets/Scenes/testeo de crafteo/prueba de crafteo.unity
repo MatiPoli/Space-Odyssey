@@ -150,7 +150,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174780428}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &174780430
 Camera:
   m_ObjectHideFlags: 0
@@ -228,6 +228,10 @@ MonoBehaviour:
     RequiredWood: 10
     RequiredSteel: 9
     RequiredRock: 19
+    RequiredWater: 0
+    RequiredPlant: 0
+    RequiredPetroleum: 0
+    RequiredIron: 0
     prefab: {fileID: 1046845637359552773, guid: c5bbb23e297709940ab20ab4c009845a, type: 3}
   - name: Wall
     ID: 2
@@ -235,6 +239,10 @@ MonoBehaviour:
     RequiredWood: 0
     RequiredSteel: 0
     RequiredRock: 0
+    RequiredWater: 0
+    RequiredPlant: 0
+    RequiredPetroleum: 0
+    RequiredIron: 0
     prefab: {fileID: 2763192111598260081, guid: d174d099ae45f3b4babbc46d58c892d3, type: 3}
   - name: Weapon
     ID: 3
@@ -242,7 +250,55 @@ MonoBehaviour:
     RequiredWood: 0
     RequiredSteel: 0
     RequiredRock: 0
+    RequiredWater: 0
+    RequiredPlant: 0
+    RequiredPetroleum: 0
+    RequiredIron: 0
     prefab: {fileID: 2767551608384533913, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
+  - name: Paquete de comida
+    ID: 4
+    description: 
+    RequiredWood: 0
+    RequiredSteel: 0
+    RequiredRock: 0
+    RequiredWater: 0
+    RequiredPlant: 0
+    RequiredPetroleum: 0
+    RequiredIron: 0
+    prefab: {fileID: 0}
+  - name: Weapon
+    ID: 3
+    description: 
+    RequiredWood: 0
+    RequiredSteel: 0
+    RequiredRock: 0
+    RequiredWater: 0
+    RequiredPlant: 0
+    RequiredPetroleum: 0
+    RequiredIron: 0
+    prefab: {fileID: 0}
+  - name: Weapon
+    ID: 3
+    description: 
+    RequiredWood: 0
+    RequiredSteel: 0
+    RequiredRock: 0
+    RequiredWater: 0
+    RequiredPlant: 0
+    RequiredPetroleum: 0
+    RequiredIron: 0
+    prefab: {fileID: 0}
+  - name: Weapon
+    ID: 3
+    description: 
+    RequiredWood: 0
+    RequiredSteel: 0
+    RequiredRock: 0
+    RequiredWater: 0
+    RequiredPlant: 0
+    RequiredPetroleum: 0
+    RequiredIron: 0
+    prefab: {fileID: 0}
   CraftPos: {fileID: 569403881}
 --- !u!114 &174780433
 MonoBehaviour:
@@ -259,6 +315,10 @@ MonoBehaviour:
   Rock: 100
   Wood: 23
   Steel: 78
+  Water: 0
+  Plant: 0
+  Iron: 0
+  Petroleum: 0
 --- !u!1 &179211106
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569403877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2709999, y: 4.89, z: 7.41}
+  m_LocalPosition: {x: 0.2709999, y: 0.39, z: 7.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1235,6 +1295,18 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 0.23
       objectReference: {fileID: 0}
+    - target: {fileID: 3497604687289912548, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034983106004987625, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6037784106441698814, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7866022402174871637, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4
@@ -1277,6 +1349,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7866022402174871637, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973115293580280635, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753322819889169568, guid: 188a4d80eb465894e894f2b71ddd3b35, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

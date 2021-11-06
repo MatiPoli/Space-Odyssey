@@ -9,6 +9,13 @@ public class Materials : MonoBehaviour
     public int Rock;
     public int Wood;
     public int Steel;
+    //BORRAR LO DE ARRIBA !!!!!
+
+    public int Water;
+    public int Plant;
+    public int Iron;
+    public int Petroleum;
+
     // Start is called before the first frame update
     void Start()
     {
