@@ -9718,13 +9718,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 10
+  fuerzaSalto: 1000
   cam: {fileID: 715322168}
-  fuerzaSalto: 100
+  animator: {fileID: 1114064450}
   groundCheck: {fileID: 1071096209}
   groundDistance: 0.1
   groundMask:
     serializedVersion: 2
     m_Bits: 256
+  sensibilidadVertical: 100
+  sensibilidadHorizontal: 100
+  bloquearCursor: 1
 --- !u!54 &847770070
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9754,6 +9758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barraDeVida: {fileID: 2009189202}
+  vidaMaxima: 0
 --- !u!114 &847770072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11144,7 +11149,6 @@ GameObject:
   - component: {fileID: 1114064447}
   - component: {fileID: 1114064450}
   - component: {fileID: 1114064448}
-  - component: {fileID: 1114064449}
   m_Layer: 10
   m_Name: Batracio
   m_TagString: Untagged
@@ -11182,19 +11186,6 @@ CapsuleCollider:
   m_Height: 17.788296
   m_Direction: 1
   m_Center: {x: 0.20923463, y: 8.39415, z: 0}
---- !u!114 &1114064449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114064446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6616a37e7a1ba47a57f58734323c47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  esPlayer: 1
 --- !u!95 &1114064450
 Animator:
   serializedVersion: 3
