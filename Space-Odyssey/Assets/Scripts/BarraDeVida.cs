@@ -37,6 +37,7 @@ public class BarraDeVida : MonoBehaviour
     	}
     }
 
+    
     private void SaveData()
     {
         PlayerPrefs.SetFloat(vidaPrefsName, GetComponent<Variables>().getVida());
@@ -50,4 +51,5 @@ public class BarraDeVida : MonoBehaviour
     {
         SaveData();
     }
+
 }

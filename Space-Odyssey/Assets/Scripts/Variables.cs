@@ -9,8 +9,8 @@ public class Variables : DamageTarget
     private float tiempo, tiempoSinOx;
 
 	[Header("Consumo de oxigeno")]
-    public float oxigenoPorSegundo=0.001f;
-	public float oxigenoPorMovimiento=0.01f;
+    public float oxigenoPorSegundo=0.0001f;
+	public float oxigenoPorMovimiento=0.001f;
 
 	bool sinOx = false;
 
@@ -20,6 +20,12 @@ public class Variables : DamageTarget
 			oxigeno -= amount;
 		else
 			sinOx=true;
+    }
+    
+    public void aumentarOxigeno(float amount) {
+
+    	oxigeno = oxigeno + amount;
+
     }
 
     void Start()

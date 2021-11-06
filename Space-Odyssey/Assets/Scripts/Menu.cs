@@ -37,6 +37,7 @@ public class Menu : MonoBehaviour
         isMuted = PlayerPrefs.GetFloat("MUTED") == 1;    
         AudioListener.pause = isMuted;
 
+        /*
         if(Screen.fullScreen)         
         {
             toggle.isOn = true;
@@ -46,7 +47,7 @@ public class Menu : MonoBehaviour
         {
             toggle.isOn = false;
             
-        }
+        }*/
     }
    public void ActivateFullScreen(bool fullscreen)       //FullScreen
     {
