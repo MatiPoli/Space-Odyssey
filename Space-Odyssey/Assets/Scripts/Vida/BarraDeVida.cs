@@ -13,13 +13,20 @@ public class BarraDeVida : MonoBehaviour
     private string inicio2 = "inic2" ;
     private int iniciamosV = 0;
     private string vidaPrefsName = "vida";
+    DamageTarget variables;
+
+    private void Awake()
+    {
+        variables = GetComponent<DamageTarget>();
+    }
 
     protected void Start()
     {
+        vidaMaxima = variables.getMaxVida();
         iniciamosV = PlayerPrefs.GetInt(inicio2, 0);
         if (iniciamosV == 1)
         {
-            PlayerPrefs.SetFloat(vidaPrefsName, GetComponent<Variables>().getMaxVida());
+            PlayerPrefs.SetFloat(vidaPrefsName, variables.getMaxVida());
             PlayerPrefs.SetFloat(inicio2, 0);
         }
         LoadData();
@@ -29,7 +36,7 @@ public class BarraDeVida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	vidaActual = GetComponent<Variables>().getVida(); 
+    	vidaActual = variables.getVida(); 
         barraDeVida.fillAmount = vidaActual / vidaMaxima;
 
         if(barraDeVida.GetComponent<Image>().fillAmount == 0){
@@ -39,11 +46,11 @@ public class BarraDeVida : MonoBehaviour
 
     private void SaveData()
     {
-        PlayerPrefs.SetFloat(vidaPrefsName, GetComponent<Variables>().getVida());
+        PlayerPrefs.SetFloat(vidaPrefsName, variables.getVida());
     }
     private void LoadData()
     {
-        GetComponent<Variables>().actualizarVida(PlayerPrefs.GetFloat(vidaPrefsName, 100));
+        variables.actualizarVida(PlayerPrefs.GetFloat(vidaPrefsName, 100));
     }
 
     private void OnDestroy()

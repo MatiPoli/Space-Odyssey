@@ -9718,13 +9718,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 10
-  cam: {fileID: 715322168}
   fuerzaSalto: 100
+  cam: {fileID: 715322168}
+  animator: {fileID: 1114064450}
   groundCheck: {fileID: 1071096209}
   groundDistance: 0.1
   groundMask:
     serializedVersion: 2
     m_Bits: 256
+  sensibilidadVertical: 250
+  sensibilidadHorizontal: 250
+  bloquearCursor: 1
 --- !u!54 &847770070
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9754,6 +9758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barraDeVida: {fileID: 2009189202}
+  vidaMaxima: 0
 --- !u!114 &847770072
 MonoBehaviour:
   m_ObjectHideFlags: 0
