@@ -11,6 +11,7 @@ public class PlayerShooter : PlayerCombat
 
     void Start()
     {
+        //Comentario inservible
         sonidoDisparo = GetComponent<AudioSource>();
     }
 
