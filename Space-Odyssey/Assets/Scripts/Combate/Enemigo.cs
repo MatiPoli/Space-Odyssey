@@ -6,6 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Animator))]
 public class Enemigo : DamageTarget
 {
+    Rigidbody rb;
     Animator animator;
     AudioSource death_sound;
     NavMeshAgent agent;
@@ -17,11 +18,14 @@ public class Enemigo : DamageTarget
     public LayerMask targetLayer;
     public Transform target;
 
+    Vector3 moveAmount;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
         death_sound = GetComponent<AudioSource>();
         agent = GetComponent<NavMeshAgent>();
+        rb = GetComponent<Rigidbody>();
         //target = GameObject.Find("Player").transform;
     }
 
@@ -37,6 +41,16 @@ public class Enemigo : DamageTarget
         else
             agent.SetDestination(target.position);
 
+    }
+    void mover()
+    {
+        //Vector3 targetMovementAmount = direcson * velocidad;
+        //moveAmount = Vector3.SmoothDamp(moveAmount, targetMovementAmount, ref smoothMoveVelocity, .15f);
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
     }
 
     void faceTarget()
