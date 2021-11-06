@@ -67,7 +67,6 @@ public class Enemigo : DamageTarget
         if(death_sound != null)
             death_sound.PlayOneShot(death_sound.clip);
 
-        agent.enabled = false;
         this.enabled = false;
 
     }

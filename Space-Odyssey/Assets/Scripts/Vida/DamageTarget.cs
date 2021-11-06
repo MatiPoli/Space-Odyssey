@@ -12,7 +12,6 @@ public class DamageTarget : MonoBehaviour
 
     protected void Start()
     {
-        vida = maxVida;
     }
 
     public float getVida()
