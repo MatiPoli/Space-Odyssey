@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Combustible_Nave : MonoBehaviour
 { 
-    public string gasolinaPrefsName = "gaso";
+    private string gasolinaPrefsName = "gaso";
     // public string inicio = "inic";
 
     public int iniciamosSN = 0;
 
-    public string inicio = "inic" ;
+    private string inicio = "inic" ;
 
     private void Awake()
     {
@@ -31,12 +31,6 @@ public class Combustible_Nave : MonoBehaviour
 
         }
             LoadData();
-
-        
-        
-      
-
-
 
 
     }
