@@ -11,14 +11,19 @@ public class Enemigo : DamageTarget
     AudioSource death_sound;
     NavMeshAgent agent;
 
+    Vector3 moveAmount;
+    Vector3 smoothMoveVelocity;
+
+
+    [Header("Movimiento")]
+    public float velocidad;
+
     [Header("Arma")]
     public Arma arma;
 
     [Header("Datos del enemigo a vencer")]
     public LayerMask targetLayer;
     public Transform target;
-
-    Vector3 moveAmount;
 
     void Awake()
     {
@@ -32,20 +37,24 @@ public class Enemigo : DamageTarget
     void Update()
     {
         bool targetEnRango = Physics.CheckSphere(transform.position, arma.attackRange, targetLayer);
+        faceTarget();
         if (targetEnRango)
         {
-            agent.SetDestination(transform.position);
-            faceTarget();
+            //agent.SetDestination(transform.position);
+            mover(Vector3.zero);
             arma.attack();
         }
         else
-            agent.SetDestination(target.position);
+        {
+            mover(Vector3.forward);
+        }
+            //agent.SetDestination(target.position);
 
     }
-    void mover()
+    void mover(Vector3 direcson)
     {
-        //Vector3 targetMovementAmount = direcson * velocidad;
-        //moveAmount = Vector3.SmoothDamp(moveAmount, targetMovementAmount, ref smoothMoveVelocity, .15f);
+        Vector3 targetMovementAmount = direcson * velocidad;
+        moveAmount = Vector3.SmoothDamp(moveAmount, targetMovementAmount, ref smoothMoveVelocity, .15f);
     }
 
     private void FixedUpdate()
@@ -56,9 +65,10 @@ public class Enemigo : DamageTarget
     void faceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, direction.y, direction.z));
         transform.rotation = lookRotation;
     }
+
 
     public override void recibirDanio(float danio)
     {
