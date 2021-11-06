@@ -39,10 +39,10 @@ public class CargaOxigeno : MonoBehaviour
     	jugador = GameObject.FindWithTag("Player");
     	//GameObject objeto = collision.gameObject;
     		distancia = jugador.GetComponent<DistEntreObj>().calcularDistancia();
-    		Debug.Log(distancia);
+    		//Debug.Log(distancia);
     		oxigenoActual = jugador.GetComponent<Variables>().oxigeno;
-
-    		if(distancia < 100) {
+			Debug.Log(oxigenoActual);
+    		if(distancia < 50) {
     			if(oxigenoActual < 100) {
     			
     			jugador.GetComponent<Variables>().aumentarOxigeno(0.01f);

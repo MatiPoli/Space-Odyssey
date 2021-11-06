@@ -10,8 +10,8 @@ public class Variables : DamageTarget
     private float tiempo, tiempoSinOx;
 
 	[Header("Consumo de oxigeno")]
-    public float oxigenoPorSegundo=0.0001f;
-	public float oxigenoPorMovimiento=0.001f;
+    public float oxigenoPorSegundo=0.01f;
+	public float oxigenoPorMovimiento=0.1f;
 
 
 	bool sinOx = false;
@@ -43,7 +43,8 @@ public class Variables : DamageTarget
 
     	//si se mueve el oxigeno se consume más rapido
     	if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) {
-    		reducirOxigeno(Time.deltaTime*oxigenoPorSegundoAlMoverse);
+    		//reducirOxigeno(Time.deltaTime*oxigenoPorSegundoAlMoverse);
+    		reducirOxigeno(Time.deltaTime*oxigenoPorMovimiento);
     	} else {
     		reducirOxigeno(Time.deltaTime*oxigenoPorSegundo);
     	}
