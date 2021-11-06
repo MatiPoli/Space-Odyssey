@@ -5128,7 +5128,7 @@ GameObject:
   - component: {fileID: 7106020052598607056}
   - component: {fileID: -2014031478786692381}
   - component: {fileID: 3497604687289912548}
-  - component: {fileID: 4699527167916945234}
+  - component: {fileID: -6168942111384086735}
   m_Layer: 10
   m_Name: Weapon
   m_TagString: Untagged
@@ -5279,7 +5279,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -5292,12 +5292,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2767551608384533913}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.43, y: 0.81, z: 0.23}
   m_Center: {x: -0.02, y: 0.01, z: 0}
---- !u!114 &4699527167916945234
+--- !u!114 &-6168942111384086735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5306,10 +5306,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2767551608384533913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df6b18dc037aae4592306a6481db8f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 42df2fdfb3a370342967f1e039745c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planeta: {fileID: 0}
+  ID: 0
+  type: Objeto de relleno
+  descripcion: ESTE CAPAZ Q LO USAS
+  icon: {fileID: 21300000, guid: 8a3b650c7be3be249b1777c45caee0cb, type: 3}
+  pickedUp: 0
+  equiped: 0
+  weapon: {fileID: 0}
+  weaponManager: {fileID: 0}
+  playersWeapon: 0
 --- !u!1 &4967456177014338600
 GameObject:
   m_ObjectHideFlags: 0
