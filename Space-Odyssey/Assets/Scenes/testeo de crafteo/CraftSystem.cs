@@ -22,9 +22,13 @@ public class CraftSystem : MonoBehaviour
 
 public void Craft (int a){
     for(int i=0; i < itemsCraft.Length; i++){
-        if(itemsCraft[i].ID == a){
+        if(itemsCraft[i].ID == a && Materials.shd.Wood >= itemsCraft[i].RequiredWood && Materials.shd.Steel >= itemsCraft[i].RequiredSteel  && Materials.shd.Rock >= itemsCraft[i].RequiredRock ){
         Instantiate(itemsCraft[i].prefab, CraftPos.position, CraftPos.rotation, null);
             print(itemsCraft[i].name + " Crafteado");
+
+            Materials.shd.Wood -= itemsCraft[i].RequiredWood;
+            Materials.shd.Steel -= itemsCraft[i].RequiredSteel;
+            Materials.shd.Rock -= itemsCraft[i].RequiredRock;
 
         }
     }
