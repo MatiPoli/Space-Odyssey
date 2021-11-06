@@ -3657,6 +3657,7 @@ GameObject:
   - component: {fileID: 641342526}
   - component: {fileID: 641342525}
   - component: {fileID: 641342524}
+  - component: {fileID: 641342531}
   m_Layer: 0
   m_Name: Alien (2)
   m_TagString: Untagged
@@ -3671,7 +3672,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641342523}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -3857,7 +3858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641342523}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 500.5318, y: 0.21087623, z: 492.74927}
+  m_LocalPosition: {x: -726.34, y: 429, z: 492.74927}
   m_LocalScale: {x: 0.08978428, y: 0.08978428, z: 0.08978428}
   m_Children:
   - {fileID: 1116755680}
@@ -3869,6 +3870,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &641342531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641342523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 680521308}
 --- !u!1 &648318822
 GameObject:
   m_ObjectHideFlags: 0
@@ -9696,7 +9710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847770067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 529, y: 2.42, z: 464.2942}
+  m_LocalPosition: {x: -731, y: 354, z: 464.2942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 715322168}
@@ -9782,7 +9796,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847770067}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
   m_Name: 
@@ -9882,6 +9896,7 @@ GameObject:
   - component: {fileID: 902669254}
   - component: {fileID: 902669253}
   - component: {fileID: 902669252}
+  - component: {fileID: 902669259}
   m_Layer: 0
   m_Name: Alien (1)
   m_TagString: Untagged
@@ -9896,7 +9911,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902669251}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -10082,7 +10097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902669251}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 503.38, y: 0.21087623, z: 494.93}
+  m_LocalPosition: {x: -723.4918, y: 429, z: 494.93}
   m_LocalScale: {x: 0.08978428, y: 0.08978428, z: 0.08978428}
   m_Children:
   - {fileID: 1208863649}
@@ -10094,6 +10109,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &902669259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902669251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 680521308}
 --- !u!1 &912074509
 GameObject:
   m_ObjectHideFlags: 0
@@ -34043,6 +34071,7 @@ GameObject:
   - component: {fileID: 1708693646}
   - component: {fileID: 1708693645}
   - component: {fileID: 1708693644}
+  - component: {fileID: 1708693651}
   m_Layer: 0
   m_Name: Alien (3)
   m_TagString: Untagged
@@ -34057,7 +34086,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708693643}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -34243,7 +34272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708693643}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 505.87177, y: 0.21087623, z: 492.74927}
+  m_LocalPosition: {x: -721, y: 429, z: 492.74927}
   m_LocalScale: {x: 0.08978428, y: 0.08978428, z: 0.08978428}
   m_Children:
   - {fileID: 615424966}
@@ -34255,6 +34284,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1708693651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708693643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 680521308}
 --- !u!1 &1711382513
 GameObject:
   m_ObjectHideFlags: 0
@@ -36780,7 +36822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712339483795553587}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 503.38, y: 0.21087623, z: 490.36002}
+  m_LocalPosition: {x: -723.4918, y: 429, z: 490.36002}
   m_LocalScale: {x: 0.08978428, y: 0.08978428, z: 0.08978428}
   m_Children:
   - {fileID: 8354783210651467492}
@@ -36867,6 +36909,7 @@ GameObject:
   - component: {fileID: 712339483795553591}
   - component: {fileID: 712339483795553592}
   - component: {fileID: 712339483795553593}
+  - component: {fileID: 712339483795553594}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Untagged
@@ -37044,7 +37087,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712339483795553587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -37059,6 +37102,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &712339483795553594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712339483795553587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 680521308}
 --- !u!1 &731506949429894760
 GameObject:
   m_ObjectHideFlags: 0
