@@ -6,11 +6,13 @@ public class DamageTarget : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    [Header("Vida")]
     public float maxVida = 100;
     protected float vida;
 
     protected void Start()
     {
+        vida = maxVida;
     }
 
     public float getVida()
@@ -35,12 +37,6 @@ public class DamageTarget : MonoBehaviour
 
         if (vida <= 0f)
             die();
-    }
-
-    // Update is called once per frame
-    protected void Update()
-    {
-        //Debug.Log(vida);   
     }
 
     protected virtual void die()

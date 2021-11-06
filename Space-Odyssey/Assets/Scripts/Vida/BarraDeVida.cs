@@ -16,6 +16,7 @@ public class BarraDeVida : MonoBehaviour
 
     protected void Start()
     {
+        vidaMaxima = GetComponent<Variables>().getMaxVida();
         iniciamosV = PlayerPrefs.GetInt(inicio2, 0);
         if (iniciamosV == 1)
         {

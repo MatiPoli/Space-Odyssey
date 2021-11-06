@@ -23,8 +23,8 @@ public class CraftSystem : MonoBehaviour
 public void Craft (int a){
     for(int i=0; i < itemsCraft.Length; i++){
         if(itemsCraft[i].ID == a){
-        //     instantiate(itemsCraft[i].prefab, CraftPos.localPosition.x, CraftPos.localPosition.y, CraftPos.localPosition.z)
-            print(itemsCraft[i].name + "Crafteado");
+        Instantiate(itemsCraft[i].prefab, CraftPos.position, CraftPos.rotation, null);
+            print(itemsCraft[i].name + " Crafteado");
 
         }
     }
@@ -47,4 +47,5 @@ public class Items{
     public GameObject prefab;
 
 }
+
 }
