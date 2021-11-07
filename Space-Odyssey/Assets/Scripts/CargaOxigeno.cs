@@ -41,7 +41,7 @@ public class CargaOxigeno : MonoBehaviour
     		distancia = jugador.GetComponent<DistEntreObj>().calcularDistancia();
     		//Debug.Log(distancia);
     		oxigenoActual = jugador.GetComponent<Variables>().oxigeno;
-			Debug.Log(oxigenoActual);
+			//Debug.Log(oxigenoActual);
     		if(distancia < 50) {
     			if(oxigenoActual < 100) {
     			
