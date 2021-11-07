@@ -7,6 +7,7 @@ public abstract class Arma : MonoBehaviour
     public float attackRange = 0.5f;
     public int attackDamage = 25;
     public float attackRate = 1f;
+    public Transform attackOrigin;
     float nextAttackTime = 0;
 
     protected bool attackReady()

@@ -112,6 +112,6 @@ public class MovimientoFPS : MonoBehaviour
 
     bool enPiso()
     {
-        return Physics.CheckSphere(groundCheck.position, groundDistance,groundMask);
+        return Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
     }
 }
