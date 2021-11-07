@@ -33,7 +33,7 @@ public class Inventario : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("c")){
+        if (Input.GetKeyDown("i")){
             inventotyEnabled =! inventotyEnabled; 
         }
 

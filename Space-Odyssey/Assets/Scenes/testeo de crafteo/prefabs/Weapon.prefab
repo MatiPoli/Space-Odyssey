@@ -5124,7 +5124,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7866022402174871637}
-  - component: {fileID: 64582215318205014}
   - component: {fileID: 7106020052598607056}
   - component: {fileID: -2014031478786692381}
   - component: {fileID: 3497604687289912548}
@@ -5155,23 +5154,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &64582215318205014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2767551608384533913}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1bae3dc7b4138e479740cb9fc190f51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackRange: 100
-  attackDamage: 25
-  attackRate: 8
-  bulletOrigin: {fileID: 0}
-  muzzleFlash: {fileID: 3070139614306095680}
 --- !u!82 &7106020052598607056
 AudioSource:
   m_ObjectHideFlags: 0
