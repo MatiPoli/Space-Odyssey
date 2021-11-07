@@ -4799,7 +4799,6 @@ GameObject:
   - component: {fileID: 522433977}
   - component: {fileID: 522433976}
   - component: {fileID: 522433975}
-  - component: {fileID: 522433974}
   m_Layer: 5
   m_Name: Hud de disparo
   m_TagString: Untagged
@@ -4807,20 +4806,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &522433974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522433973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058d60b551111e94d9bb5f08ed377745, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  slotHolder: {fileID: 0}
 --- !u!114 &522433975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17037,7 +17022,6 @@ GameObject:
   - component: {fileID: 1532194639}
   - component: {fileID: 1532194641}
   - component: {fileID: 1532194640}
-  - component: {fileID: 1532194642}
   m_Layer: 10
   m_Name: Player Primera Persona
   m_TagString: Player
@@ -17187,24 +17171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1863510443}
   slotHolder: {fileID: 49296033}
---- !u!114 &1532194642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532194632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab47ce2b23637654f997343912388dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 50
-  sensibilidad: 10
-  planeta: {fileID: 0}
-  fuerzaSalto: 0.25
-  enPiso: 1
-  saltando: 0
 --- !u!1 &1541784595
 GameObject:
   m_ObjectHideFlags: 0
@@ -23065,6 +23031,7 @@ GameObject:
   - component: {fileID: 3715356598871674107}
   - component: {fileID: 3715356598871674108}
   - component: {fileID: 3715356598871674109}
+  - component: {fileID: 3715356598871674110}
   m_Layer: 0
   m_Name: Nave__
   m_TagString: Untagged
@@ -23127,6 +23094,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac5ab37b34d1e64c8875a72824cc2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3715356598871674110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3715356598871674105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8611dfe4e97718743bace86687088471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangoEscape: 40
+  layerJugador:
+    serializedVersion: 2
+    m_Bits: 1024
+  teclaEscape: 102
 --- !u!1 &3717383026014087715
 GameObject:
   m_ObjectHideFlags: 0
