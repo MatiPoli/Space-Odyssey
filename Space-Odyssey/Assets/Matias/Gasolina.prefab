@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5006537624633790468}
   - component: {fileID: 2959122957305569906}
   m_Layer: 0
-  m_Name: Gasolina(Clone)
+  m_Name: Gasolina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8342222875905976988}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.288, y: 57.633, z: -8.527}
-  m_LocalScale: {x: 22.49539, y: 22.49539, z: 22.49539}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
