@@ -9,7 +9,6 @@ public class Enemigo : DamageTarget
     Rigidbody rb;
     Animator animator;
     AudioSource death_sound;
-    NavMeshAgent agent;
 
     Vector3 moveAmount;
     Vector3 smoothMoveVelocity;
@@ -29,19 +28,23 @@ public class Enemigo : DamageTarget
     {
         animator = GetComponent<Animator>();
         death_sound = GetComponent<AudioSource>();
-        agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         //target = GameObject.Find("Player").transform;
     }
 
     void Update()
     {
+        Ray ray = new Ray(this.transform.position, target.position);
+        Debug.DrawRay(ray.origin, ray.direction * arma.attackRange, Color.blue);
         bool targetEnRango = Physics.CheckSphere(transform.position, arma.attackRange, targetLayer);
-        faceTarget();
+        for(int i=0;i<100;i++)
+            faceTarget();
         if (targetEnRango)
         {
             //agent.SetDestination(transform.position);
             mover(Vector3.zero);
+            //for(int i=0;i<100;i++)
+            //    aimToTarget();
             arma.attack();
         }
         else
@@ -65,8 +68,16 @@ public class Enemigo : DamageTarget
     void faceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, direction.y, direction.z));
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = lookRotation;
+    }
+
+    void aimToTarget()
+    {
+        Vector3 aimDirection = arma.attackOrigin.forward;
+        Vector3 targetDirection = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.FromToRotation(aimDirection, targetDirection);
+        arma.attackOrigin.rotation = lookRotation * arma.attackOrigin.rotation;
     }
 
 

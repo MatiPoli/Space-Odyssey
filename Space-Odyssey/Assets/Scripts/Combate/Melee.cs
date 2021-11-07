@@ -5,7 +5,6 @@ using UnityEngine;
 public class Melee : Arma
 {
     [Header("Arma")]
-    public Transform attackPoint;
     public LayerMask enemyLayers;
 
     override public void attack()
@@ -16,7 +15,7 @@ public class Melee : Arma
         // Animacion de ataque
 
         //Deteccion de golpe
-        Collider[] enemigos = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
+        Collider[] enemigos = Physics.OverlapSphere(attackOrigin.position, attackRange, enemyLayers);
         foreach (Collider enemigo in enemigos)
         {
             DamageTarget enemy = enemigo.GetComponent<DamageTarget>();
@@ -28,6 +27,6 @@ public class Melee : Arma
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Gizmos.DrawWireSphere(attackOrigin.position, attackRange);
     }
 }

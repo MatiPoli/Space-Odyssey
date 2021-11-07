@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Gun : Arma
 {
-    public Transform bulletOrigin;
     public ParticleSystem muzzleFlash;
     AudioSource sonidoDisparo;
 
@@ -31,9 +30,15 @@ public class Gun : Arma
         // Sonido de disparo
         playSonidoDisparo();
 
+        Ray ray = new Ray(attackOrigin.position, attackOrigin.forward);
+
+        Debug.DrawRay(ray.origin, ray.direction * attackRange);
+
         //Deteccion de golpe
         RaycastHit hit;
-        if (Physics.Raycast(bulletOrigin.transform.position, bulletOrigin.transform.forward, out hit, attackRange))
+
+
+        if (Physics.Raycast(attackOrigin.transform.position, attackOrigin.transform.forward, out hit, attackRange))
         {
             //Debug.Log("Le pegue un balaso a " + hit.transform.gameObject.name);
             DamageTarget target = hit.transform.GetComponent<DamageTarget>();
