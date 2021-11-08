@@ -12,7 +12,7 @@ public class Enemigo : DamageTarget
 
     Vector3 moveAmount;
     Vector3 smoothMoveVelocity;
-
+    Atractor atractorGameObject;
 
     [Header("Movimiento")]
     public float velocidad;
@@ -24,36 +24,65 @@ public class Enemigo : DamageTarget
     public LayerMask targetLayer;
     public Transform target;
 
+    [Header("IA")]
+    public float rangoVision;
+    public float esperaEntreMovimiento;
+
+    float tiempoDesdeMovimiento = 0;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
         death_sound = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
+        atractorGameObject = GetComponent<Gravedad>().atractor;
         //target = GameObject.Find("Player").transform;
     }
 
     void Update()
     {
-        Ray ray = new Ray(this.transform.position, target.position);
-        Debug.DrawRay(ray.origin, ray.direction * arma.attackRange, Color.blue);
-        bool targetEnRango = Physics.CheckSphere(transform.position, arma.attackRange, targetLayer);
-        for(int i=0;i<100;i++)
-            faceTarget();
-        if (targetEnRango)
+        if (targetEnRangoAtaque())
         {
+            faceTarget();
             //agent.SetDestination(transform.position);
             mover(Vector3.zero);
-            //for(int i=0;i<100;i++)
-            //    aimToTarget();
+            for (int i = 0; i < 100; i++)
+                aimToTarget();
             arma.attack();
         }
-        else
+        else if (targetOnSight())
         {
+            faceTarget();
             mover(Vector3.forward);
         }
-            //agent.SetDestination(target.position);
-
+        else
+            mover(Vector3.zero);
     }
+    bool targetEnRangoAtaque()
+    {
+        return (target.position - arma.attackOrigin.position).magnitude <= arma.attackRange;
+    }
+
+    bool targetOnSight()
+    {
+        return (target.position - arma.attackOrigin.position).magnitude <= rangoVision;
+    }
+
+    void wander()
+    {
+        tiempoDesdeMovimiento += Time.deltaTime;
+        if (tiempoDesdeMovimiento < esperaEntreMovimiento)
+        {
+            //mover(Vector3.zero);
+            return;
+        }
+        tiempoDesdeMovimiento = 0;
+        Vector3[] directions = new Vector3[] { transform.forward, transform.right};
+        int dir = Random.Range(-1, 1);
+        int i = Random.Range(0, directions.Length-1);
+        mover(dir * directions[i]);
+    }
+
     void mover(Vector3 direcson)
     {
         Vector3 targetMovementAmount = direcson * velocidad;
@@ -67,17 +96,14 @@ public class Enemigo : DamageTarget
 
     void faceTarget()
     {
-        Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = lookRotation;
+        transform.LookAt(target.position);
+        if (atractorGameObject != null)
+            atractorGameObject.rotate(this.gameObject);
     }
 
     void aimToTarget()
     {
-        Vector3 aimDirection = arma.attackOrigin.forward;
-        Vector3 targetDirection = target.position - transform.position;
-        Quaternion lookRotation = Quaternion.FromToRotation(aimDirection, targetDirection);
-        arma.attackOrigin.rotation = lookRotation * arma.attackOrigin.rotation;
+        arma.attackOrigin.LookAt(target.position);
     }
 
 
@@ -105,4 +131,11 @@ public class Enemigo : DamageTarget
         this.enabled = false;
 
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(arma.attackOrigin.position, rangoVision);
+    }
+
 }

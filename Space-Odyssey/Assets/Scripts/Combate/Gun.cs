@@ -30,10 +30,6 @@ public class Gun : Arma
         // Sonido de disparo
         playSonidoDisparo();
 
-        Ray ray = new Ray(attackOrigin.position, attackOrigin.forward);
-
-        Debug.DrawRay(ray.origin, ray.direction * attackRange);
-
         //Deteccion de golpe
         RaycastHit hit;
 
@@ -46,5 +42,13 @@ public class Gun : Arma
             if (target != null)
                 target.recibirDanio(attackDamage);
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawRay(attackOrigin.position, attackOrigin.forward * attackRange);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackOrigin.position, attackRange);
     }
 }

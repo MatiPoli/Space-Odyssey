@@ -33,16 +33,17 @@ public class Variables : DamageTarget
     new void Start()
     {
 		base.Start();
-    	oxigeno = 100;
+        if(oxigeno==0)
+    	    oxigeno = 100;
     }
 
-    new void Update()
+    void Update()
     {
     	tiempo += Time.deltaTime;
     	//oxigeno = oxigeno - (tiempo/1000); //disminuye proporcionalmente al tiempo
 
     	//si se mueve el oxigeno se consume más rapido
-    	if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) {
+    	if (Input.GetAxisRaw("Horizontal")!=0f || Input.GetAxisRaw("Vertical")!=0f) {
     		//reducirOxigeno(Time.deltaTime*oxigenoPorSegundoAlMoverse);
     		reducirOxigeno(Time.deltaTime*oxigenoPorMovimiento);
     	} else {
