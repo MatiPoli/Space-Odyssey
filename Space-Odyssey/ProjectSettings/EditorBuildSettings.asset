@@ -30,12 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Planetas/Havay.unity
     guid: 6d4b02b8cc1d5ec42998f24d30b1073d
   - enabled: 1
-    path: Assets/Scenes/Planetas/Earth.unity
-    guid: df99202abf33f3f4ca5b8aa90e9f6d25
-  - enabled: 1
     path: Assets/Scenes/Planetas/Alolea.unity
     guid: 3fc67b6dea60f1440a122e907c8458a1
   - enabled: 1
     path: Assets/Scenes/Planetas/Egipt.unity
     guid: 3ea948c1d34ba5c4abf87dddd9252197
+  - enabled: 1
+    path: Assets/Scenes/Planetas/Earth.unity
+    guid: df99202abf33f3f4ca5b8aa90e9f6d25
   m_configObjects: {}

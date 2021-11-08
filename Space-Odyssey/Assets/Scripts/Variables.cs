@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Variables : DamageTarget
 {
+    [Header("Oxigeno")]
     public float oxigeno;
     private float tiempo, tiempoSinOx;
 
 	[Header("Consumo de oxigeno")]
-    public float oxigenoPorSegundo=0.001f;
-	public float oxigenoPorMovimiento=0.01f;
+    public float oxigenoPorSegundo=0.01f;
+	public float oxigenoPorMovimiento=0.1f;
+
 
 	bool sinOx = false;
 
@@ -21,11 +23,18 @@ public class Variables : DamageTarget
 		else
 			sinOx=true;
     }
+    
+    public void aumentarOxigeno(float amount) {
 
-    void Start()
+    	oxigeno = oxigeno + amount;
+
+    }
+
+    new void Start()
     {
 		base.Start();
-    	oxigeno = 100;
+        if(oxigeno==0)
+    	    oxigeno = 100;
     }
 
     void Update()
@@ -34,16 +43,16 @@ public class Variables : DamageTarget
     	//oxigeno = oxigeno - (tiempo/1000); //disminuye proporcionalmente al tiempo
 
     	//si se mueve el oxigeno se consume más rapido
-    	if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) {
-    		reducirOxigeno(oxigenoPorMovimiento);
+    	if (Input.GetAxisRaw("Horizontal")!=0f || Input.GetAxisRaw("Vertical")!=0f) {
+    		//reducirOxigeno(Time.deltaTime*oxigenoPorSegundoAlMoverse);
+    		reducirOxigeno(Time.deltaTime*oxigenoPorMovimiento);
     	} else {
-    		reducirOxigeno(oxigenoPorSegundo);
+    		reducirOxigeno(Time.deltaTime*oxigenoPorSegundo);
     	}
 
 		if(sinOx) {
     		tiempoSinOx += Time.deltaTime; 
     		this.recibirDanio(tiempoSinOx/1000); //disminuye proporcionalmente al tiempo
-			Debug.Log(this.getVida());
     	} else {
     		sinOx = false; // para cuando este el sistema de recargar oxigeno
     		tiempoSinOx = 0.0f;

@@ -63,7 +63,13 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //if (Input.GetKey(KeyCode.Escape)){ SceneManager.LoadScene("Scenes/Espacio");} // Solucion temporal para ir a la nave
+
+        if (Input.GetKey(KeyCode.F)){ 
+            SceneManager.LoadScene("Scenes/Espacio");} 
+            // Solucion temporal para ir a la nave
+
         aplicarGravedad();
         mover();
     }

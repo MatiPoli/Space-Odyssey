@@ -71,7 +71,7 @@ public class Player : MonoBehaviour {
     }
 
     private void TriggerFlashLight() {
-        if (Input.GetKeyDown(KeyCode.F)) {
+        if (Input.GetKeyDown(KeyCode.L)) {
             if (flashLight.enabled) {
                 flashLight.enabled = false;
             } else {
