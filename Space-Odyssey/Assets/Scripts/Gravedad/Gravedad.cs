@@ -12,6 +12,9 @@ public class Gravedad : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+    }
+    void Start()
+    {
         rb.constraints = RigidbodyConstraints.FreezeRotation;
         rb.useGravity = false;
     }

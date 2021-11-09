@@ -41,22 +41,29 @@ public class Enemigo : DamageTarget
 
     void Update()
     {
+        Debug.Log(animator.GetBool("Atacando"));
         if (targetEnRangoAtaque())
         {
+            mover(Vector3.zero);
             faceTarget();
             //agent.SetDestination(transform.position);
-            mover(Vector3.zero);
             for (int i = 0; i < 100; i++)
                 aimToTarget();
+            // Animacion de ataque
+            animator.SetBool("Atacando",true);
             arma.attack();
         }
-        else if (targetOnSight())
-        {
-            faceTarget();
-            mover(Vector3.forward);
+        else 
+        {   
+            animator.SetBool("Atacando",false);
+            if (targetOnSight())
+            {
+                faceTarget();
+                mover(Vector3.forward);
+            }
+            else
+                mover(Vector3.zero);
         }
-        else
-            mover(Vector3.zero);
     }
     bool targetEnRangoAtaque()
     {
@@ -85,6 +92,9 @@ public class Enemigo : DamageTarget
 
     void mover(Vector3 direcson)
     {
+        #region Animacion de caminata
+            animator.SetBool("Caminando",(direcson!=Vector3.zero));
+        #endregion
         Vector3 targetMovementAmount = direcson * velocidad;
         moveAmount = Vector3.SmoothDamp(moveAmount, targetMovementAmount, ref smoothMoveVelocity, .15f);
     }
@@ -94,11 +104,16 @@ public class Enemigo : DamageTarget
         rb.MovePosition(rb.position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
     }
 
-    void faceTarget()
+    void faceTo(Vector3 pos)
     {
-        transform.LookAt(target.position);
+        transform.LookAt(pos);
         if (atractorGameObject != null)
             atractorGameObject.rotate(this.gameObject);
+    }
+
+    void faceTarget()
+    {
+        faceTo(target.position);
     }
 
     void aimToTarget()
@@ -120,7 +135,6 @@ public class Enemigo : DamageTarget
 
     protected override void die()
     {
-
         // Animacion de Muerte
         animator.SetBool("Lo Nismearon", true);
 
