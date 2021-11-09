@@ -44,9 +44,9 @@ public class Enemigo : DamageTarget
         Debug.Log(animator.GetBool("Atacando"));
         if (targetEnRangoAtaque())
         {
+            mover(Vector3.zero);
             faceTarget();
             //agent.SetDestination(transform.position);
-            mover(Vector3.zero);
             for (int i = 0; i < 100; i++)
                 aimToTarget();
             // Animacion de ataque
