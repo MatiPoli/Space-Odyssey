@@ -128,6 +128,9 @@ public class Enemigo : DamageTarget
         if(death_sound != null)
             death_sound.PlayOneShot(death_sound.clip);
 
+        // El enemigo suelta el arma al morir
+        arma.dropWeapon();
+
         this.enabled = false;
 
     }
