@@ -671,6 +671,9 @@ GameObject:
   - component: {fileID: 22158296}
   - component: {fileID: 22158298}
   - component: {fileID: 22158297}
+  - component: {fileID: 22158300}
+  - component: {fileID: 22158299}
+  - component: {fileID: 22158301}
   m_Layer: 0
   m_Name: Pistola
   m_TagString: Untagged
@@ -811,6 +814,48 @@ MonoBehaviour:
   attackRate: 1
   attackOrigin: {fileID: 1354596504}
   muzzleFlash: {fileID: 1835325386}
+--- !u!114 &22158299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22158295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 919132149452838940}
+--- !u!54 &22158300
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22158295}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &22158301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22158295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3841475, y: 0.7367367, z: 0.1558145}
+  m_Center: {x: 0.021618756, y: 0.042731136, z: 0.0029961583}
 --- !u!1 &24393846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2523,9 @@ GameObject:
   - component: {fileID: 130288305}
   - component: {fileID: 130288307}
   - component: {fileID: 130288306}
+  - component: {fileID: 130288309}
+  - component: {fileID: 130288308}
+  - component: {fileID: 130288310}
   m_Layer: 0
   m_Name: Pistola
   m_TagString: Untagged
@@ -2618,6 +2666,48 @@ MonoBehaviour:
   attackRate: 1
   attackOrigin: {fileID: 105831264}
   muzzleFlash: {fileID: 884932930}
+--- !u!114 &130288308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130288304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 919132149452838940}
+--- !u!54 &130288309
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130288304}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &130288310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130288304}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4287598, y: 0.77245694, z: 0.15421154}
+  m_Center: {x: 0.01147171, y: 0.039391033, z: 0.00101966}
 --- !u!1 &130843357
 GameObject:
   m_ObjectHideFlags: 0
@@ -35625,6 +35715,9 @@ GameObject:
   - component: {fileID: 1305800702}
   - component: {fileID: 1305800704}
   - component: {fileID: 1305800703}
+  - component: {fileID: 1305800706}
+  - component: {fileID: 1305800705}
+  - component: {fileID: 1305800707}
   m_Layer: 0
   m_Name: Pistola
   m_TagString: Untagged
@@ -35765,6 +35858,48 @@ MonoBehaviour:
   attackRate: 1
   attackOrigin: {fileID: 939701344}
   muzzleFlash: {fileID: 462617677}
+--- !u!114 &1305800705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305800701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 919132149452838940}
+--- !u!54 &1305800706
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305800701}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1305800707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305800701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4646925, y: 0.77871865, z: 0.15017606}
+  m_Center: {x: 0.027998298, y: 0.04907511, z: 0.00043934086}
 --- !u!1 &1307472071
 GameObject:
   m_ObjectHideFlags: 0
@@ -38816,7 +38951,7 @@ GameObject:
   - component: {fileID: 1506444339}
   - component: {fileID: 1506444343}
   - component: {fileID: 1506444344}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39650,7 +39785,7 @@ MonoBehaviour:
   groundDistance: 0.1
   groundMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 257
   sensibilidadVertical: 100
   sensibilidadHorizontal: 100
   bloquearCursor: 1
@@ -49579,6 +49714,9 @@ GameObject:
   - component: {fileID: 1925483967}
   - component: {fileID: 1925483969}
   - component: {fileID: 1925483968}
+  - component: {fileID: 1925483971}
+  - component: {fileID: 1925483970}
+  - component: {fileID: 1925483972}
   m_Layer: 0
   m_Name: Pistola
   m_TagString: Untagged
@@ -49719,6 +49857,48 @@ MonoBehaviour:
   attackRate: 1
   attackOrigin: {fileID: 1004697278}
   muzzleFlash: {fileID: 1228646684}
+--- !u!114 &1925483970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925483966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74208f519b27ee540857b665b70c6502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atractor: {fileID: 919132149452838940}
+--- !u!54 &1925483971
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925483966}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1925483972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925483966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4174458, y: 0.74630374, z: 0.15040028}
+  m_Center: {x: 0.01902944, y: 0.03509826, z: 0.0026887166}
 --- !u!1 &1927182041
 GameObject:
   m_ObjectHideFlags: 0
