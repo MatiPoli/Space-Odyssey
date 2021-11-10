@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Gun : Arma
 {
     public ParticleSystem muzzleFlash;
     AudioSource sonidoDisparo;
 
-    void Start()
+    void Awake()
     {
         sonidoDisparo = GetComponent<AudioSource>();
     }
