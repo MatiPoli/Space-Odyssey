@@ -8,6 +8,7 @@ TagManager:
   - Main menu
   - Fire
   - WeaponManager
+  - Ore
   layers:
   - Default
   - TransparentFX

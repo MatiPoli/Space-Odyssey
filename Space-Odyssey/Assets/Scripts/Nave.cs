@@ -17,8 +17,8 @@ public class Nave : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clickeaste en la nave");
-        SceneManager.LoadScene("Scenes/Mundo");
+        Debug.Log("Click!");
+        SceneManager.LoadScene("Scenes/Planetas/Earth");
     }
     void OnCollisionEnter(Collision col)
     {
