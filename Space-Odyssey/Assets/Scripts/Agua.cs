@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Agua : MonoBehaviour
 {
 
-	//private GameObject jugador;
+    //private GameObject jugador;
     public float tiempo = 0.0f;
     public GameObject jugador;
 
@@ -16,16 +16,18 @@ public class Agua : MonoBehaviour
     private Color32 colorOriginal = new Color32(75,181,236,255);
     private bool enAgua = false;
 
+    public Canvas fondo;
+
     //private Image barra = GetComponent<BarraDeVida>().barraDeVida;
 
-	/*
-	private void OnCollisionStay(Collision collision) //la entrada es un collision, objecto que entra en colision
+    /*
+    private void OnCollisionStay(Collision collision) //la entrada es un collision, objecto que entra en colision
     {
         //Color32 colorOriginal = new Color32(75,181,236,255); // color original 75 181 236
         int tiempoEntero;
 
-    	jugador = GameObject.FindWithTag("Player");
-    	GameObject objeto = collision.gameObject;
+        jugador = GameObject.FindWithTag("Player");
+        GameObject objeto = collision.gameObject;
         //barra = GetComponent<BarraDeVida>().barraDeVida;
 
         //tiempo += Time.deltaTime;
@@ -33,7 +35,7 @@ public class Agua : MonoBehaviour
 
 
             
-    	if(objeto == jugador) {
+        if(objeto == jugador) {
 
             tiempo += Time.deltaTime;
 
@@ -53,9 +55,9 @@ public class Agua : MonoBehaviour
 
             }
             //GetComponent<Variables>().vida;
-    		//Destroy(jugador);
-    	}
-    	
+            //Destroy(jugador);
+        }
+        
     }
 
     //renuevo el tiempo que estuvo abajo cuando sale del agua
@@ -78,6 +80,7 @@ public class Agua : MonoBehaviour
 
         if(jugador == objeto){
             enAgua = true;
+            fondo.GetComponent<Canvas> ().enabled = true;
         }
         
         //tiempo += Time.deltaTime;
@@ -121,6 +124,8 @@ public class Agua : MonoBehaviour
             enAgua = false;
             tiempo = 0.0f;
             barra.GetComponent<Image>().color = colorOriginal;
+            //fondo.SetActive(false);
+            fondo.GetComponent<Canvas> ().enabled = false;
         }
         
     }
@@ -128,7 +133,7 @@ public class Agua : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        fondo.enabled = false;
     }
 
     // Update is called once per frame
