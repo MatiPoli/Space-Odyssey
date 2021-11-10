@@ -20,6 +20,9 @@ public class MovimientoFPS : MonoBehaviour
     public float groundDistance=0.1f;
     public LayerMask groundMask;
 
+    // Linterna
+    public Light flashlight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,9 @@ public class MovimientoFPS : MonoBehaviour
         mover(movimiento);
         if (Input.GetKey(KeyCode.Space) && enPiso())
             saltar();
+        if (Input.GetKeyDown("f")) {
+            triggerFlashlight();
+        }
     }
 
     void FixedUpdate()
@@ -70,5 +76,9 @@ public class MovimientoFPS : MonoBehaviour
     bool enPiso()
     {
         return Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+    }
+
+    void triggerFlashlight() {
+        flashlight.enabled = !flashlight.enabled;
     }
 }
