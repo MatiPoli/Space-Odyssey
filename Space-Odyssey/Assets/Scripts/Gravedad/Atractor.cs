@@ -13,6 +13,13 @@ public class Atractor : MonoBehaviour
 
         body.GetComponent<Rigidbody>().AddForce(gravity * G);
 
+        rotate(body);
+    }
+
+    public void rotate(GameObject body)
+    {
+        Vector3 gravity = (transform.position - body.transform.position).normalized;
+
         Quaternion orientason = Quaternion.FromToRotation(-body.transform.up, gravity) * body.transform.rotation;
 
         body.transform.rotation = orientason;

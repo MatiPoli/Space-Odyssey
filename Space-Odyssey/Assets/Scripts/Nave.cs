@@ -38,7 +38,7 @@ public class Nave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene("Scenes/Menu"); // Solucion temporal para salir del juego
+       // if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene("Pause"); // Solucion temporal para salir del juego
         movimiento = new Vector3(0, 0, Input.GetAxis("Vertical"));
         if (Input.GetKey(KeyCode.A)) transform.Rotate(new Vector3(0, -velocidad_rotacion * Time.deltaTime, 0));
         if (Input.GetKey(KeyCode.D)) transform.Rotate(new Vector3(0, velocidad_rotacion * Time.deltaTime, 0));
@@ -56,4 +56,5 @@ public class Nave : MonoBehaviour
     {
         rb.AddRelativeForce(movimiento * velocidad);
     }
+   
 }
