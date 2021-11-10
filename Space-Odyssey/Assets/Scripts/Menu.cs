@@ -15,8 +15,7 @@ public class Menu : MonoBehaviour
     }
     public void LoadScene(string sceneName)   //Function that loads a new scene
     {
-        if (sceneName == "Espacio")
-            Time.timeScale = 1f;
+        Time.timeScale = 1f;
         Destroy(GameObject.FindGameObjectWithTag("Main menu"));
         SceneManager.LoadScene(sceneName);
     }
