@@ -31,7 +31,7 @@ public class CraftSystem : MonoBehaviour
         }
         else{
             CraftZone.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
