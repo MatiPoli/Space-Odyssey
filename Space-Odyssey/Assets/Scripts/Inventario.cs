@@ -43,7 +43,7 @@ public class Inventario : MonoBehaviour
         }
         else{
             inventory.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
 
     }
