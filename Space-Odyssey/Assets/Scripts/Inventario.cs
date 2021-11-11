@@ -93,8 +93,8 @@ public class Inventario : MonoBehaviour
                 itemObject.transform.parent = slot [i].transform;
                 itemObject.SetActive(false);
 
-                slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().cantidad = 1;
+                slot[i].GetComponent<Slot>().UpdateSlot();
 
                 slot[i].GetComponent<Slot>().empty = false;
                 break;

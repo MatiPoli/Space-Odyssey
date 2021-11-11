@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class Slot : MonoBehaviour, IPointerClickHandler
 {
@@ -18,6 +18,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public Transform slotIconGameObject;
 
+    public TextMeshProUGUI uiText;
+
     private void Start()
     {
         slotIconGameObject = transform.GetChild(0);
@@ -25,6 +27,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public void UpdateSlot(){
         slotIconGameObject.GetComponent<Image>().sprite = icon;
+        if (cantidad > 0) {
+            uiText.SetText(cantidad.ToString());
+        } else {
+            uiText.SetText("");
+        }
     }
 
 
