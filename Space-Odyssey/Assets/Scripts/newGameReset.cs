@@ -11,6 +11,7 @@ public class newGameReset : MonoBehaviour
         PlayerPrefs.SetInt("inic", 1);
         PlayerPrefs.SetInt("inic2", 1);
         PlayerPrefs.SetInt("inic3", 1);
+        PlayerPrefs.SetInt("inic4", 1);
         PlayerPrefs.SetInt("Muerto", 0);
     }
 

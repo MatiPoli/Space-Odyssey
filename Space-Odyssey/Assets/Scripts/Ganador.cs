@@ -31,7 +31,13 @@ public class Ganador : MonoBehaviour
 	}
 */
     void Start()
-    {
+    {   
+        if (PlayerPrefs.GetInt("inic4", 0) == 1)
+        {
+            PlayerPrefs.SetInt("powerup", 1);
+            PlayerPrefs.SetInt("inic4", 0);
+        }
+
         rend = GetComponent<Renderer>();
         rend.enabled = false;
 
@@ -45,7 +51,7 @@ public class Ganador : MonoBehaviour
     {
     	float distancia;
 
-        if (mejoraNave)
+        if (PlayerPrefs.GetInt("powerup", 0)==1)
         {
             // Desactiva el collider cuando tenga las mejoras de la nave
             m_Collider.enabled = false;
