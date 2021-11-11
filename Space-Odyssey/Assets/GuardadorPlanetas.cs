@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GuardadorPlanetas : MonoBehaviour
 {
-
     public void VuelvoAlMenu()
     {
         PlayerPrefs.SetInt("scene", 2);

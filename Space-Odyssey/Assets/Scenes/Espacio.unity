@@ -5225,8 +5225,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 208007887}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 208007886}
+        m_TargetAssemblyTypeName: PauseEspacio, Assembly-CSharp
         m_MethodName: Loadscene
         m_Mode: 1
         m_Arguments:
@@ -5237,7 +5237,7 @@ MonoBehaviour:
           m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 208007886}
+      - m_Target: {fileID: 208007887}
         m_TargetAssemblyTypeName: GuardadorEspacio, Assembly-CSharp
         m_MethodName: VuelvoAlMenu
         m_Mode: 1
@@ -5296,10 +5296,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 208007881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edbbdb8a595520d4f99a54fc1495f1a1, type: 3}
+  m_Script: {fileID: 11500000, guid: b9b535baa33076e4a9a3af15397d0872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nave: {fileID: 2167598264592734336}
+  PauseMenuUI: {fileID: 916780821}
 --- !u!114 &208007887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5309,10 +5309,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 208007881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1276e6c57fd9b354d80bd37b58db68c3, type: 3}
+  m_Script: {fileID: 11500000, guid: bbcd05e859a5dcf49bfeac005b00c532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenuUI: {fileID: 916780821}
+  Nave: {fileID: 2167598264592734336}
 --- !u!1 &216332760
 GameObject:
   m_ObjectHideFlags: 0
@@ -25111,7 +25111,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1825666965}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: PauseEspacio, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -36062,7 +36062,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1825666960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1276e6c57fd9b354d80bd37b58db68c3, type: 3}
+  m_Script: {fileID: 11500000, guid: b9b535baa33076e4a9a3af15397d0872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 916780821}
@@ -36289,7 +36289,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1825666965}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: PauseEspacio, Assembly-CSharp
         m_MethodName: SaliiR
         m_Mode: 1
         m_Arguments:
