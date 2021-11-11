@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class Minable : MonoBehaviour
 {
     public GameObject myPrefab;
+    public GameObject Personaje;
+    private float distancia;
     private Renderer render;
     public Rigidbody rb;
     public Rigidbody Branch_01;
@@ -20,8 +22,13 @@ public class Minable : MonoBehaviour
 
     void DestroyGameObject()
     {
-        GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position, this.transform.rotation, null);
-        Destroy(gameObject);
+        distancia = GetComponent<DistEntreObj>().calcularDistancia();
+        Debug.Log(distancia);
+        if(distancia<=50f)
+        {
+            GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position, this.transform.rotation, null);
+            Destroy(gameObject);
+        }
     }
 
     void OnMouseDown()

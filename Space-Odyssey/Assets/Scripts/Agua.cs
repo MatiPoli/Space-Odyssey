@@ -95,7 +95,7 @@ public class Agua : MonoBehaviour
                 GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position = tmp, this.transform.rotation, null);
                 //GameObject instantiatedObject = Instantiate(robotPrefab);
                 instantiatedObject.name = "Aguita";
-                instantiatedObject.AddComponent<Rigidbody>();
+                //instantiatedObject.AddComponent<Rigidbody>();
                 instantiatedObject.GetComponent<Rigidbody>().freezeRotation = true;
 
             }

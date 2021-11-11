@@ -41,7 +41,6 @@ public class Enemigo : DamageTarget
 
     void Update()
     {
-        Debug.Log(animator.GetBool("Atacando"));
         if (targetEnRangoAtaque())
         {
             mover(Vector3.zero);

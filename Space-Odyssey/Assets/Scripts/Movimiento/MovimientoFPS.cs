@@ -56,7 +56,7 @@ public class MovimientoFPS : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && enPiso())
             saltar();
-        if (Input.GetKeyDown("f")) {
+        if (Input.GetKeyDown("l")) {
             triggerFlashlight();
         }
     }

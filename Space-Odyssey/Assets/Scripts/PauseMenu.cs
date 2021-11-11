@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    
+    public GameObject hud;
     public static bool GameIsPaused = false;
 
     public GameObject PauseMenuUI;
@@ -31,14 +31,17 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
+        hud.SetActive(true);
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     void Pause()
     {
+        hud.SetActive(false);
         PauseMenuUI.SetActive(true);
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;
