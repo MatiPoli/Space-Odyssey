@@ -25,8 +25,9 @@ public class Minable : MonoBehaviour
         distancia = GetComponent<DistEntreObj>().calcularDistancia();
         Debug.Log(distancia);
         if(distancia<=50f)
-        {
+        {   
             GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position, this.transform.rotation, null);
+            instantiatedObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             Destroy(gameObject);
         }
     }
