@@ -34,7 +34,7 @@ public class Ganador : MonoBehaviour
     {   
         if (PlayerPrefs.GetInt("inic4", 0) == 1)
         {
-            PlayerPrefs.SetInt("powerup", 1);
+            PlayerPrefs.SetInt("powerup", 0);
             PlayerPrefs.SetInt("inic4", 0);
         }
 
@@ -55,7 +55,7 @@ public class Ganador : MonoBehaviour
         {
             // Desactiva el collider cuando tenga las mejoras de la nave
             m_Collider.enabled = false;
-
+            Debug.Log("holaa");
             //Debug.Log("Collider.enabled = " + m_Collider.enabled);
         }
 
