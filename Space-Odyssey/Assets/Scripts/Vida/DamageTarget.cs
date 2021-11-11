@@ -20,6 +20,12 @@ public class DamageTarget : MonoBehaviour
         return this.vida;
     }
 
+    public void RecuperarVida(float cantidad_a_restaurar){
+        this.vida += cantidad_a_restaurar;
+        actualizarVida(this.vida);
+        print("Se ha recuperado " + cantidad_a_restaurar + " exitosamente");
+    }
+
     public float getMaxVida()
     {
         return this.maxVida;
