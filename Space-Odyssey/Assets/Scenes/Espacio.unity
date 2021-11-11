@@ -30828,6 +30828,7 @@ GameObject:
   - component: {fileID: 1451505608}
   - component: {fileID: 1451505607}
   - component: {fileID: 1451505606}
+  - component: {fileID: 1451505610}
   m_Layer: 0
   m_Name: Pared5
   m_TagString: Untagged
@@ -30855,7 +30856,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451505605}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -30911,6 +30912,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451505610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451505605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed114e902662b04ebcbcb3bbc25f4af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mejoraNave: 1
 --- !u!1 &1543592253
 GameObject:
   m_ObjectHideFlags: 0
@@ -36666,9 +36680,10 @@ GameObject:
   - component: {fileID: 2167598264592734339}
   - component: {fileID: 2167598264592734338}
   - component: {fileID: 2167598264592734337}
+  - component: {fileID: 2167598264592734340}
   m_Layer: 0
   m_Name: Nave__
-  m_TagString: Untagged
+  m_TagString: Nave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36717,6 +36732,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2167598264592734340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167598264592734336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc361104f5194546afc0f7d3084389b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object1: {fileID: 216332760}
 --- !u!33 &2517741006023216543
 MeshFilter:
   m_ObjectHideFlags: 0
