@@ -49,7 +49,7 @@ public class Combustible_Nave : MonoBehaviour
     void Update(){
 
     if (Input.GetKey("w")){
-        GetComponent<Image>().fillAmount -= 0.0001f; 
+        GetComponent<Image>().fillAmount -= 0.00005f; 
     }
 
     if( GetComponent<Image>().fillAmount < 0.5f){

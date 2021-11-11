@@ -17,9 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 5d8fd82132c5aa141908de316b6038ff
-  - enabled: 1
-    path: Assets/Scenes/Game Over.unity
-    guid: 971968885494e664288233dd27f49282
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Planetas/Orange.unity
     guid: 0eab2901ac52edf49a37421aa5acc8ed
@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Planetas/Earth.unity
     guid: df99202abf33f3f4ca5b8aa90e9f6d25
+  - enabled: 1
+    path: Assets/Scenes/You Win.unity
+    guid: 7a02cb43a50dab8419286d902a03376d
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 238e6fbd1e7dd6046a91c6aaf79071c5
   m_configObjects: {}
