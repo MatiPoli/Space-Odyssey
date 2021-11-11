@@ -58,6 +58,20 @@ public class Inventario : MonoBehaviour
 
     }
 
+    //Nueva funcion para que no haga falta usar el isTrigger y poder usar el script Objetos
+   /*  private void OnCollisionEnter(Collision other)
+    {
+        
+        if (other.gameObject.CompareTag("Item"))
+        {
+            GameObject itemPickedUp = other.gameObject;
+
+            Item item = itemPickedUp.GetComponent<Item>();
+
+            AddItem(itemPickedUp,item.ID,item.type,item.descripcion,item.icon);
+        }
+    }
+*/
     public void AddItem(GameObject itemObject, int itemID, string itemType, string iteamDescription, Sprite itemIcon){
         
         for(int i = 0; i < allSlots; i++){

@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Objeto : MonoBehaviour
 {
@@ -27,6 +28,12 @@ public class Objeto : MonoBehaviour
         
     }
 
+    void OnMouseDown()
+    {
+        Debug.Log("Toca Objeto");
+        SceneManager.LoadScene("Scenes/Espacio");
+    }
+
     void gravedadObjetos()
     {
         Physics.gravity = planeta.transform.position - transform.position;  // Hace que el vector gravedad siempre apunte al centro del planeta.
@@ -38,4 +45,6 @@ public class Objeto : MonoBehaviour
     {
         gravedadObjetos();
     }
+
+    
 }
