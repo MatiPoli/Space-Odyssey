@@ -34,14 +34,16 @@ public class Inventario : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("i")){
-            inventotyEnabled =! inventotyEnabled; 
+            inventotyEnabled =! inventotyEnabled;
         }
 
         if (inventotyEnabled){
             inventory.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
         }
         else{
             inventory.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
     }
