@@ -10,11 +10,14 @@ public class Agua : MonoBehaviour
     //private GameObject jugador;
     public float tiempo = 0.0f;
     public GameObject jugador;
+    public GameObject planeta;
 
     public float limiteTiempo = 10.0f;
     public Image barra;
     private Color32 colorOriginal = new Color32(75,181,236,255);
     private bool enAgua = false;
+
+    public GameObject myPrefab;
 
     public Canvas fondo;
 
@@ -70,7 +73,7 @@ public class Agua : MonoBehaviour
     private void OnTriggerStay(Collider collision){
 
         int tiempoEntero;
-
+        bool ban = false;
 
 
         //jugador = GameObject.FindWithTag("Player");
@@ -81,6 +84,21 @@ public class Agua : MonoBehaviour
         if(jugador == objeto){
             enAgua = true;
             fondo.GetComponent<Canvas> ().enabled = true;
+
+            if(Input.GetKeyDown("p") && ban == false) {
+                ban = true;
+                Vector3 tmp = transform.position;
+                tmp.x +=30;
+                //Vector3 tmp2 = transform.position;
+               // tmp2.y +=30;
+
+                GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position = tmp, this.transform.rotation, null);
+                //GameObject instantiatedObject = Instantiate(robotPrefab);
+                instantiatedObject.name = "Aguita";
+                instantiatedObject.AddComponent<Rigidbody>();
+                instantiatedObject.GetComponent<Rigidbody>().freezeRotation = true;
+
+            }
         }
         
         //tiempo += Time.deltaTime;

@@ -2785,6 +2785,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &145883902
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +3717,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1001 &190201879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10782,6 +10784,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1001 &357439921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11344,6 +11347,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!114 &383555016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12113,7 +12117,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7226755277370538748, guid: 3a2566d288fda2d44b2c81eb5e62ad1c, type: 3}
       propertyPath: m_Name
-      value: Balde
+      value: Balde (NO BORRAR)
       objectReference: {fileID: 0}
     - target: {fileID: 7226755277370538748, guid: 3a2566d288fda2d44b2c81eb5e62ad1c, type: 3}
       propertyPath: m_TagString
@@ -15133,6 +15137,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &650014335
 GameObject:
   m_ObjectHideFlags: 0
@@ -15373,6 +15378,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!114 &654935754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23499,6 +23505,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &840581762
 GameObject:
   m_ObjectHideFlags: 0
@@ -23821,7 +23828,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876048907}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42df2fdfb3a370342967f1e039745c64, type: 3}
   m_Name: 
@@ -25860,6 +25867,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1051228440
 GameObject:
   m_ObjectHideFlags: 0
@@ -32262,6 +32270,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!114 &1162316750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34866,6 +34875,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1309447952
 GameObject:
   m_ObjectHideFlags: 0
@@ -37181,6 +37191,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1450479821
 GameObject:
   m_ObjectHideFlags: 0
@@ -43483,8 +43494,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempo: 0
   jugador: {fileID: 1532194632}
+  planeta: {fileID: 0}
   limiteTiempo: 10
   barra: {fileID: 639022101}
+  myPrefab: {fileID: 0}
   fondo: {fileID: 0}
 --- !u!135 &1506444344
 SphereCollider:
@@ -43802,6 +43815,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1515502316
 GameObject:
   m_ObjectHideFlags: 0
@@ -44207,6 +44221,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 257
+  flashlight: {fileID: 0}
   sensibilidadVertical: 100
   sensibilidadHorizontal: 100
   bloquearCursor: 1
@@ -44301,8 +44316,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempo: 0
   jugador: {fileID: 1506444338}
+  planeta: {fileID: 0}
   limiteTiempo: 10
   barra: {fileID: 639022101}
+  myPrefab: {fileID: 876048907}
   fondo: {fileID: 56903232}
 --- !u!114 &1532194643
 MonoBehaviour:
@@ -47190,6 +47207,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1699458595
 GameObject:
   m_ObjectHideFlags: 0
@@ -49104,6 +49122,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1832449808
 GameObject:
   m_ObjectHideFlags: 0
@@ -49917,6 +49936,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1863510443
 GameObject:
   m_ObjectHideFlags: 0
@@ -56148,6 +56168,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1983280517
 GameObject:
   m_ObjectHideFlags: 0
@@ -56353,6 +56374,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1988192992
 GameObject:
   m_ObjectHideFlags: 0
@@ -56527,6 +56549,7 @@ MonoBehaviour:
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
+  uiText: {fileID: 0}
 --- !u!1 &1996498226
 GameObject:
   m_ObjectHideFlags: 0
