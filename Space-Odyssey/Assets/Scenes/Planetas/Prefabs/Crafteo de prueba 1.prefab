@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 9
-  type: OBJETO DE PRUEBA
+  type: OBJETO DE PRUEBA jjj
   descripcion: 
   icon: {fileID: 21300000, guid: cd6439dfbc4c6e44faa5b92363d7a23e, type: 3}
   pickedUp: 0
