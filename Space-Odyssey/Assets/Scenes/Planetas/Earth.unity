@@ -13329,7 +13329,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 2130805408}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -22875,7 +22875,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786813461}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1bae3dc7b4138e479740cb9fc190f51, type: 3}
   m_Name: 
@@ -45133,14 +45133,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 60
-  fuerzaSalto: 4000
+  fuerzaSalto: 1000
   cam: {fileID: 2130805406}
   animator: {fileID: 33062332}
   groundCheck: {fileID: 259833467}
   groundDistance: 0.1
   groundMask:
     serializedVersion: 2
-    m_Bits: 257
+    m_Bits: 1
   flashlight: {fileID: 0}
   sensibilidadVertical: 100
   sensibilidadHorizontal: 100
