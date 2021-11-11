@@ -12,12 +12,15 @@ public class Minable : MonoBehaviour
     private Renderer render;
     public Rigidbody rb;
     public Rigidbody Branch_01;
+    private int cont; 
 
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         render = gameObject.GetComponent<Renderer>();
+
+        cont = 0;
     }
 
     void DestroyGameObject()
@@ -35,6 +38,12 @@ public class Minable : MonoBehaviour
     void OnMouseDown()
     {
         float maxDistance = 10;
-        DestroyGameObject();
+
+        if(cont == 3){
+            DestroyGameObject();
+
+        }
+
+        cont ++;
     }
 }

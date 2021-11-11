@@ -43,12 +43,12 @@ public class Inventario : MonoBehaviour
         }
         else{
             inventory.SetActive(false);
-            //Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
     }
 
-   /* private void OnTriggerEnter(Collider other){
+    private void OnTriggerEnter(Collider other){
         if(other.tag=="Item"){
             GameObject itemPickUp = other.gameObject;
 
@@ -59,14 +59,13 @@ public class Inventario : MonoBehaviour
         }
 
     }
-*/
+
     //Nueva funcion para que no haga falta usar el isTrigger y poder usar el script Objetos
-    private void OnCollisionEnter(Collision other)
+   /*  private void OnCollisionEnter(Collision other)
     {
-   
+        
         if (other.gameObject.CompareTag("Item"))
         {
-            Debug.Log("holaaaaaa");
             GameObject itemPickedUp = other.gameObject;
 
             Item item = itemPickedUp.GetComponent<Item>();
@@ -74,7 +73,7 @@ public class Inventario : MonoBehaviour
             AddItem(itemPickedUp,item.ID,item.type,item.descripcion,item.icon);
         }
     }
-
+*/
     public void AddItem(GameObject itemObject, int itemID, string itemType, string iteamDescription, Sprite itemIcon){
         
         for(int i = 0; i < allSlots; i++){
@@ -96,8 +95,8 @@ public class Inventario : MonoBehaviour
                 itemObject.transform.parent = slot [i].transform;
                 itemObject.SetActive(false);
 
-                slot[i].GetComponent<Slot>().cantidad = 1;
                 slot[i].GetComponent<Slot>().UpdateSlot();
+                slot[i].GetComponent<Slot>().cantidad = 1;
 
                 slot[i].GetComponent<Slot>().empty = false;
                 break;
