@@ -24,16 +24,19 @@ public class Nave : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         string nombre = col.gameObject.name;
-        for(int i=0;i<nombre.Length;i++)
-            if(nombre[i]==' ')
-            {
-                nombre = nombre.Substring(0, i);
-                break;
-            }
-        if (nombre == "lowpoly_earth")
-            SceneManager.LoadScene("Scenes/Juego");
-        else
-            SceneManager.LoadScene("Scenes/Planetas/" + char.ToUpper(nombre[0]) + nombre.Substring(1));
+        if(nombre != "Pared1" && nombre != "Pared2" && nombre != "Pared3" && nombre != "Pared4" && nombre != "Pared5")
+        {
+            for(int i=0;i<nombre.Length;i++)
+                if(nombre[i]==' ')
+                {
+                    nombre = nombre.Substring(0, i);
+                    break;
+                }
+            if (nombre == "lowpoly_earth")
+                SceneManager.LoadScene("Scenes/Juego");
+            else
+                SceneManager.LoadScene("Scenes/Planetas/" + char.ToUpper(nombre[0]) + nombre.Substring(1));
+        }
     }
 
     // Update is called once per frame
