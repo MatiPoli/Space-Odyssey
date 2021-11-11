@@ -11,7 +11,8 @@ public class gravedaddeobjetos : MonoBehaviour
     	if (col.gameObject==Planeta)
     	{
     		rb = GetComponent<Rigidbody>();
-    		rb.mass=10000;
+    		rb.constraints = RigidbodyConstraints.FreezeAll;
+    		rb.mass=1000;
     	}
     }
 

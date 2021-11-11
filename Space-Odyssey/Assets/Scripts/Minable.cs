@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Minable : MonoBehaviour
 {
+    public GameObject myPrefab;
     private Renderer render;
     public Rigidbody rb;
     public Rigidbody Branch_01;
@@ -19,26 +20,13 @@ public class Minable : MonoBehaviour
 
     void DestroyGameObject()
     {
+        GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position, this.transform.rotation, null);
         Destroy(gameObject);
-
-        Destroy(this);
-
-        Destroy(rb);
     }
 
-    void Update()
+    void OnMouseDown()
     {
         float maxDistance = 10;
-
-        if (render.isVisible)
-        {
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                Debug.Log("M");
-                DestroyGameObject();
-            }
-
-        }
-
+        DestroyGameObject();
     }
 }
