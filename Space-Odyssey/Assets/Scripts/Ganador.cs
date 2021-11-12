@@ -11,6 +11,8 @@ public class Ganador : MonoBehaviour
     private Renderer rend;
     Collider m_Collider;
 
+    public Canvas fondo;
+
 /*
 	void OnCollisionEnter(Collision collision) {
 
@@ -30,8 +32,19 @@ public class Ganador : MonoBehaviour
 
 	}
 */
+
+	void OnCollisionEnter(Collision collision) {
+		fondo.GetComponent<Canvas>().enabled = true;
+	}
+
+	void OnCollisionExit(Collision collision) {
+		fondo.GetComponent<Canvas>().enabled = false;
+	}
+
     void Start()
     {   
+    	fondo.GetComponent<Canvas>().enabled = false;
+
         if (PlayerPrefs.GetInt("inic4", 0) == 1)
         {
             PlayerPrefs.SetInt("powerup", 0);
