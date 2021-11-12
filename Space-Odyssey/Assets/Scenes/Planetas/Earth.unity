@@ -86912,6 +86912,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 444097861136411579, guid: c82e9d277a13bae4dac5ab3350b39d2b, type: 3}
+      propertyPath: ID
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 964350906424078594, guid: c82e9d277a13bae4dac5ab3350b39d2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.9
@@ -89450,7 +89454,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926002630352429}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002065020021}
@@ -89832,7 +89836,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926001666053998}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002038438866}
@@ -90082,7 +90086,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926003002649668}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926001446497724}
@@ -90715,7 +90719,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926001221726541}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926001467712320}
@@ -91587,7 +91591,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 1515167289}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002992294609}
@@ -91782,7 +91786,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 1370766884}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926003079049429}
@@ -92299,7 +92303,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926002266530547}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926001373333594}
@@ -92672,7 +92676,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926003070076499}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002306609838}
@@ -93849,7 +93853,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926001550338583}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 1133254664}
@@ -94274,7 +94278,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926002196552286}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002464318743}
@@ -94859,7 +94863,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926002401000275}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002374746503}
@@ -95388,7 +95392,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926001057556901}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926003070716758}
@@ -95409,7 +95413,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926001053210391}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926003044584826}
@@ -95671,7 +95675,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926002413591840}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002175807887}
@@ -96306,7 +96310,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926001713621288}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002820349485}
@@ -96731,7 +96735,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 1985368967}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926002708943669}
@@ -97209,7 +97213,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926003096497858}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926001933228378}
@@ -97706,7 +97710,7 @@ MonoBehaviour:
   cantidad: 0
   type: 
   descripcion: 
-  texto: {fileID: 0}
+  texto: {fileID: 8013926002016613868}
   empty: 0
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 8013926001132183576}

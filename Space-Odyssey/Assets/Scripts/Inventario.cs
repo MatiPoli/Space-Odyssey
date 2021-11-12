@@ -109,7 +109,6 @@ public class Inventario : MonoBehaviour
 
                 slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().cantidad = 1;
-                Debug.Log("hola");
                 slot[i].GetComponent<Slot>().empty = false;
                 break;
             }

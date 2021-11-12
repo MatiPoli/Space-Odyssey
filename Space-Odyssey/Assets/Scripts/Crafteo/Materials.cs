@@ -61,9 +61,10 @@ public class Materials : MonoBehaviour
             }
             if(slot.GetComponent<Slot>().ID == 5)
             {
-                Titanium = slot.GetComponent<Slot>().cantidad; 
-            if(slot.GetComponent<Slot>().ID == 6)
+                Titanium = slot.GetComponent<Slot>().cantidad;
+            if(slot.GetComponent<Slot>().ID == 15)
             {
+                Debug.Log("holaaa");
                 Plata = slot.GetComponent<Slot>().cantidad; 
             }
             if(slot.GetComponent<Slot>().ID == 7)

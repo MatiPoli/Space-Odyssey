@@ -19,7 +19,10 @@ public class Variables : DamageTarget
 
     public void reducirOxigeno(float amount) { //lo uso para que se ahogue
     	if(oxigeno>0)
-			oxigeno -= amount;
+			{
+                oxigeno -= amount;
+                sinOx = false;
+            }
 		else
 			sinOx=true;
     }

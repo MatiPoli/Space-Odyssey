@@ -14,8 +14,9 @@ public class Minable : MonoBehaviour
     private Renderer render;
     public Rigidbody rb;
     public Rigidbody Branch_01;
-    private int cont; 
+    private int cont;
 
+    private bool ban = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class Minable : MonoBehaviour
         Debug.Log(distancia);
         if(distancia<=50f)
         {   
+            ban = true;
             GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position, this.transform.rotation, null);
             instantiatedObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
 
@@ -66,7 +68,7 @@ public class Minable : MonoBehaviour
     {
         distancia = GetComponent<DistEntreObj>().calcularDistancia();
 
-        if(distancia > 50.0f) {
+        if(distancia > 50.0f || ban) {
             fondo.GetComponent<Canvas>().enabled = false;
         } else {
             fondo.GetComponent<Canvas>().enabled = true;
