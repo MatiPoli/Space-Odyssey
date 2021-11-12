@@ -14,6 +14,7 @@ public class Inventario : MonoBehaviour
     private int enabledSlots;
     private GameObject[] slot;
     public GameObject slotHolder;
+    private GameObject aux;
 
     void Start()
     {
@@ -48,7 +49,7 @@ public class Inventario : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other){
+    /* private void OnTriggerEnter(Collider other){
         if(other.tag=="Item"){
             GameObject itemPickUp = other.gameObject;
 
@@ -58,10 +59,10 @@ public class Inventario : MonoBehaviour
 
         }
 
-    }
+    } */
 
     //Nueva funcion para que no haga falta usar el isTrigger y poder usar el script Objetos
-   /*  private void OnCollisionEnter(Collision other)
+     private void OnCollisionEnter(Collision other)
     {
         
         if (other.gameObject.CompareTag("Item"))
@@ -73,14 +74,17 @@ public class Inventario : MonoBehaviour
             AddItem(itemPickedUp,item.ID,item.type,item.descripcion,item.icon);
         }
     }
-*/
+
     public void AddItem(GameObject itemObject, int itemID, string itemType, string iteamDescription, Sprite itemIcon){
         
         for(int i = 0; i < allSlots; i++){
             if(slot[i].GetComponent<Slot>().ID == itemID){
                 slot[i].GetComponent<Slot>().cantidad += 1;
-                string c = "" + slot[i].GetComponent<Slot>().cantidad;
-               // slot[i].GetChild(2).GetComponent<>().Text = c; 
+                string c = slot[i].GetComponent<Slot>().cantidad + "";
+              //  slot[i].transform.GetChild(2).GetComponent<Texto>().Text = c;
+                aux = slot[i].transform.GetChild(2).gameObject;
+                aux.GetComponent<Text>().text = c;
+                Debug.Log("Se ha cambiado la cantidad a mostrar");
                 itemObject.SetActive(false);
                 break;
             }

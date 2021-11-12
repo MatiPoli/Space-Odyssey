@@ -11,6 +11,8 @@ TagManager:
   - Ore
   - Texto
   - Nave
+  - FinalBoost
+  - Mecha
   layers:
   - Default
   - TransparentFX
