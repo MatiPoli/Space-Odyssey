@@ -27,7 +27,7 @@ public class GuardadorDeInventario : MonoBehaviour
     }
     private void BorrarInventario()
     {
-        for(i=0;i<9;i++)
+        for(i=0;i<18;i++)
         {
             PlayerPrefs.SetInt("sloti"+ i, 0);
             PlayerPrefs.SetInt("slotc"+ i, 0);
@@ -37,7 +37,7 @@ public class GuardadorDeInventario : MonoBehaviour
     private void CargarInventario()
     {
         Debug.Log("Cargado");
-        for(i=0;i<9;i++)
+        for(i=0;i<18;i++)
         {
             slot = transform.GetChild(i).gameObject;
             slot.GetComponent<Slot>().ID = PlayerPrefs.GetInt("sloti"+ i, 0);
@@ -61,7 +61,7 @@ public class GuardadorDeInventario : MonoBehaviour
     // Update is called once per frame
     void OnDestroy()
     {
-        for(i=0;i<9;i++)
+        for(i=0;i<18;i++)
         {
             slot = transform.GetChild(i).gameObject;
             PlayerPrefs.SetInt("sloti"+ i, slot.GetComponent<Slot>().ID);

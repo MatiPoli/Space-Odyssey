@@ -64,7 +64,6 @@ public class Inventario : MonoBehaviour
     //Nueva funcion para que no haga falta usar el isTrigger y poder usar el script Objetos
      private void OnCollisionEnter(Collision other)
     {
-        
         if (other.gameObject.CompareTag("Item"))
         {
             GameObject itemPickedUp = other.gameObject;
