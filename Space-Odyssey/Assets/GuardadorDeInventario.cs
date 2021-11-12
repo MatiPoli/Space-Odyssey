@@ -45,7 +45,6 @@ public class GuardadorDeInventario : MonoBehaviour
             slot.GetComponent<Slot>().cantidad = PlayerPrefs.GetInt("slotc"+ i, 0);
             for(c=0;c<10;c++)
             {
-                Debug.Log(c);
                 aux = lista.transform.GetChild(c).gameObject;
                 if(aux.GetComponent<Item>().ID == PlayerPrefs.GetInt("sloti"+ i, 0))
                 {

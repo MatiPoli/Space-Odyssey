@@ -10,11 +10,6 @@ public class Materials : MonoBehaviour
     private int i;
 
     public bool PowerUp_de_nave;
-
-    public int Rock;
-    public int Wood;
-    public int Steel;
-    //BORRAR LO DE ARRIBA !!!!!
 //---------------------------------------------------------------------------------------------+
     public int Water;   //Obejeto Base                                                         |
     public int Plant;   //Obejeto Base                                                         |

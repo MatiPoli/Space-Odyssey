@@ -4,11 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 public class RestarItem : MonoBehaviour
 {
+    public Slot localslot;
+
+    public Sprite background;
+    private GameObject aux;
     // Start is called before the first frame update
-    public void Restar()
+    public void Restar(Slot localslot)
     {
-        GetComponent<Slot>().cantidad = GetComponent<Slot>().cantidad - 1;
-        Debug.Log(GetComponent<Slot>().cantidad);
+        localslot.cantidad = localslot.cantidad - 1;
+        if(localslot.cantidad==0)
+        {
+
+            localslot.ID = 0;
+            localslot.item = null;
+            localslot.type = "";
+            localslot.descripcion = "";
+            localslot.icon = null;
+            localslot.empty = true;
+            aux = localslot.transform.GetChild(0).gameObject;
+            aux.GetComponent<Image>().sprite = background;
+        }
+        // Debug.Log(GetComponent<Slot>().cantidad);
     }
+
+
 }
 

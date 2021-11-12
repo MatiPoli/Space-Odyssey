@@ -114,7 +114,7 @@ public class Inventario : MonoBehaviour
             }
 
             
-            
+           // public void RestarItemUsadio(GameObject itemObject, int itemID, string itemType, string iteamDescription, Sprite itemIcon)
             
         }
         
