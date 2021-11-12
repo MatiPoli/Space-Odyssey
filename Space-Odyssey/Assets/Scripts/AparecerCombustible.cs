@@ -29,7 +29,7 @@ public class AparecerCombustible : MonoBehaviour
         }
 
     	if(Input.GetKeyDown("p")){
-	    	if(distancia <= 30.0f){
+	    	if(distancia <= 50.0f){
 	    		GameObject instantiatedObject = Instantiate(myPrefab, respawn.position, respawn.rotation, null);
 	            instantiatedObject.name = "Gasolina";
 	            //instantiatedObject.AddComponent<Rigidbody>();
