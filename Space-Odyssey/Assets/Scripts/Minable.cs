@@ -78,8 +78,9 @@ public class Minable : MonoBehaviour
         fondo.GetComponent<Canvas>().enabled = false;
     }
 
-    void OnDestroy(){
+    /*void OnDestroy(){
         aux = GameObject.Find("FondoMinado");
         aux.GetComponent<Canvas>().enabled = false;
     }
+    */
 }

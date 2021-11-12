@@ -23,6 +23,7 @@ public class CargarCombustible : MonoBehaviour
         {
             PlayerPrefs.SetFloat("gaso", 1f);
             Debug.Log("Que hace maestro, cargame 100 de super");
+            Destroy(other.gameObject);
         }
     }
 

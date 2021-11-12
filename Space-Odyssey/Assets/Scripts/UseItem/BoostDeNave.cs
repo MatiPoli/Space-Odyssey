@@ -29,6 +29,7 @@ public class BoostDeNave : MonoBehaviour
             materialesdePlayer.PowerUp_de_nave = true; 
             PlayerPrefs.SetInt("powerup", 1);
             Debug.Log("Se ha abierto un portal a una nueva dimension ");
+            Destroy(other.gameObject);
         }
     }
 

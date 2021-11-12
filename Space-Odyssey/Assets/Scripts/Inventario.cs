@@ -90,8 +90,8 @@ public class Inventario : MonoBehaviour
                 slot[i].GetComponent<Slot>().cantidad += 1;
                 string c = slot[i].GetComponent<Slot>().cantidad + "";
               //  slot[i].transform.GetChild(2).GetComponent<Texto>().Text = c;
-                aux = slot[i].transform.GetChild(2).gameObject;
-                aux.GetComponent<Text>().text = c;
+                //aux = slot[i].transform.GetChild(2).gameObject;
+                //aux.GetComponent<Text>().text = c;
                 Debug.Log("Se ha cambiado la cantidad a mostrar");
                 itemObject.SetActive(false);
                 break;
@@ -109,7 +109,7 @@ public class Inventario : MonoBehaviour
 
                 slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().cantidad = 1;
-
+                Debug.Log("hola");
                 slot[i].GetComponent<Slot>().empty = false;
                 break;
             }

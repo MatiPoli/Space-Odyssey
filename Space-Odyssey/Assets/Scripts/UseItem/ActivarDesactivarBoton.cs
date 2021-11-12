@@ -69,126 +69,126 @@ public class ActivarDesactivarBoton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(slot.ID == 1){
+        if(slot.ID == 8){
             mybutton.enabled = true;
         }
         else {
             mybutton.enabled = false;
         }
 
-        if(slot1.ID == 1){
+        if(slot1.ID == 8){
             mybutton1.enabled = true;
         }
         else {
             mybutton1.enabled = false;
         }
 
-        if(slot2.ID == 1){
+        if(slot2.ID == 8){
             mybutton2.enabled = true;
         }
         else {
             mybutton2.enabled = false;
         }
 
-        if(slot3.ID == 1){
+        if(slot3.ID == 8){
             mybutton3.enabled = true;
         }
         else {
             mybutton3.enabled = false;
         }
 
-        if(slot4.ID == 1){
+        if(slot4.ID == 8){
             mybutton4.enabled = true;
         }
         else {
             mybutton4.enabled = false;
         }
 
-        if(slot5.ID == 1){
+        if(slot5.ID == 8){
             mybutton5.enabled = true;
         }
         else {
             mybutton5.enabled = false;
         }
 
-        if(slot6.ID == 1){
+        if(slot6.ID == 8){
             mybutton6.enabled = true;
         }
         else {
             mybutton6.enabled = false;
         }
 
-        if(slot7.ID == 1){
+        if(slot7.ID == 8){
             mybutton7.enabled = true;
         }
         else {
             mybutton7.enabled = false;
         }
 
-        if(slot8.ID == 1){
+        if(slot8.ID == 8){
             mybutton8.enabled = true;
         }
         else {
             mybutton8.enabled = false;
         }
 
-        if(slot9.ID == 1){
+        if(slot9.ID == 8){
             mybutton9.enabled = true;
         }
         else {
             mybutton9.enabled = false;
         }
 
-        if(slot10.ID == 1){
+        if(slot10.ID == 8){
             mybutton10.enabled = true;
         }
         else {
             mybutton10.enabled = false;
         }
 
-        if(slot11.ID == 1){
+        if(slot11.ID == 8){
             mybutton11.enabled = true;
         }
         else {
             mybutton11.enabled = false;
         }
 
-        if(slot12.ID == 1){
+        if(slot12.ID == 8){
             mybutton12.enabled = true;
         }
         else {
             mybutton12.enabled = false;
         }
 
-        if(slot13.ID == 1){
+        if(slot13.ID == 8){
             mybutton13.enabled = true;
         }
         else {
             mybutton13.enabled = false;
         }
 
-        if(slot14.ID == 1){
+        if(slot14.ID == 8){
             mybutton14.enabled = true;
         }
         else {
             mybutton14.enabled = false;
         }
 
-        if(slot15.ID == 1){
+        if(slot15.ID == 8){
             mybutton15.enabled = true;
         }
         else {
             mybutton15.enabled = false;
         }
 
-        if(slot16.ID == 1){
+        if(slot16.ID == 8){
             mybutton16.enabled = true;
         }
         else {
             mybutton16.enabled = false;
         }
 
-        if(slot17.ID == 1){
+        if(slot17.ID == 8){
             mybutton17.enabled = true;
         }
         else {

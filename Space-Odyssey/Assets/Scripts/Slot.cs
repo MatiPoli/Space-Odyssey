@@ -16,11 +16,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     public bool empty;
     public Sprite icon;
 
-    public Transform slotIconGameObject;
+    public GameObject slotIconGameObject;
 
     private void Start()
     {
-        slotIconGameObject = transform.GetChild(0);
+
     }
 
     public void UpdateSlot(){
@@ -30,8 +30,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public void UseItem()
     {
-        item.GetComponent<Item>().ItemUsage();
-
+        if(item != null)
+        {item.GetComponent<Item>().ItemUsage();}
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
