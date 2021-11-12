@@ -9,6 +9,7 @@ public class Minable : MonoBehaviour
     public GameObject myPrefab;
     public GameObject Personaje;
     public Canvas fondo;
+    private GameObject aux;
     private float distancia;
     private Renderer render;
     public Rigidbody rb;
@@ -78,7 +79,7 @@ public class Minable : MonoBehaviour
     }
 
     void OnDestroy(){
-        fondo.GetComponent<Canvas>().enabled = false;
-
+        aux = GameObject.Find("FondoMinado");
+        aux.GetComponent<Canvas>().enabled = false;
     }
 }

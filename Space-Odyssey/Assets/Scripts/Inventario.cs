@@ -8,7 +8,7 @@ using System;
 public class Inventario : MonoBehaviour
 {
 
-    public CraftSystem craft;
+    public bool craftEnabled;
     public GameObject inventory;
     private int allSlots;
     private int enabledSlots;
@@ -40,13 +40,13 @@ public class Inventario : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("i"))
+        if(Input.GetKeyDown("i"))
         {   
             inventotyEnabled =! inventotyEnabled;
-            if (inventotyEnabled)
+            if(inventotyEnabled)
             {
                 inventory.SetActive(true);
-                //craft.CraftZone.SetActive(false);
+                Debug.Log(craftEnabled);
                 Cursor.lockState = CursorLockMode.None;
             }
             else
@@ -54,9 +54,7 @@ public class Inventario : MonoBehaviour
                 inventory.SetActive(false);
                 Cursor.lockState = CursorLockMode.Locked;
             }
-        }
-
-        
+        } 
 
     }
 

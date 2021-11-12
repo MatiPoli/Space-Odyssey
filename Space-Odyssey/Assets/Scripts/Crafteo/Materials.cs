@@ -26,7 +26,7 @@ public class Materials : MonoBehaviour
                       //                                                                       |
 //---------------------------------------------------------------------------------------------+
 //                                                                                             |
-    public int Comida; // Crafteo de comida a base de Planta                                   |
+    public int Food; // Crafteo de comida a base de Planta                                   |
     public int PaqueteDeAguaFiltrada; //Crafteo de Agua Potable de comida a base de Agua       |
     public int Gasolina; // Crafteo a base de Petroleo (Blanco y gordo)                        |
     public int Municion; // Crafteo a base de Hierro                                           |
@@ -45,38 +45,93 @@ public class Materials : MonoBehaviour
             slot = SlotHolder.transform.GetChild(i).gameObject;
             if(slot.GetComponent<Slot>().ID == 1)
             {
-                Water = slot.GetComponent<Slot>().cantidad;
+                if(Water < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Water;
+                }
+                else
+                {
+                    Water = slot.GetComponent<Slot>().cantidad; 
+                }
             }
             if(slot.GetComponent<Slot>().ID == 2)
             {
-                Plant = slot.GetComponent<Slot>().cantidad;
+                if(Plant < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Plant;
+                }
+                else
+                {
+                    Plant = slot.GetComponent<Slot>().cantidad; 
+                }
             }
             if(slot.GetComponent<Slot>().ID == 3)
             {
-                Iron = slot.GetComponent<Slot>().cantidad;
+                if(Iron < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Iron;
+                }
+                else
+                {
+                    Iron = slot.GetComponent<Slot>().cantidad; 
+                }
             }
             if(slot.GetComponent<Slot>().ID == 4)
             {
-                Copper = slot.GetComponent<Slot>().cantidad;
+               if(Copper < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Copper;
+                }
+                else
+                {
+                    Copper = slot.GetComponent<Slot>().cantidad; 
+                }
             }
             if(slot.GetComponent<Slot>().ID == 5)
             {
-                Titanium = slot.GetComponent<Slot>().cantidad;
-            }
+                if(Titanium < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Titanium;
+                }
+                else
+                {
+                    Titanium = slot.GetComponent<Slot>().cantidad; 
+                }
             if(slot.GetComponent<Slot>().ID == 6)
             {
-                Petroleum = slot.GetComponent<Slot>().cantidad;
+                if(Plata < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Plata;
+                }
+                else
+                {
+                    Plata = slot.GetComponent<Slot>().cantidad; 
+                }
             }
             if(slot.GetComponent<Slot>().ID == 7)
             {
-                Comida = slot.GetComponent<Slot>().cantidad;
+                if(Petroleum < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Petroleum;
+                }
+                else
+                {
+                    Petroleum = slot.GetComponent<Slot>().cantidad; 
+                }
             }
             if(slot.GetComponent<Slot>().ID == 8)
             {
-                Gasolina = slot.GetComponent<Slot>().cantidad;
+                if(Gasolina < slot.GetComponent<Slot>().cantidad)
+                {
+                    slot.GetComponent<Slot>().cantidad = Gasolina;
+                }
+                else
+                {
+                    Gasolina = slot.GetComponent<Slot>().cantidad; 
+                }
             }
         }        
     }
 
-
+}
 }

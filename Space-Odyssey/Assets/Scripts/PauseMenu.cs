@@ -12,6 +12,11 @@ public class PauseMenu : MonoBehaviour
     public GameObject player;
     public GameObject PauseMenuUI;
     
+    public bool prendido()
+    {
+        return GameIsPaused;
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))

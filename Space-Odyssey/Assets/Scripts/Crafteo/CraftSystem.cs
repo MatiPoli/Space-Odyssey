@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CraftSystem : MonoBehaviour
 {
     public GameObject CraftZone;
-    public Inventario inventario;
+    public bool inventoryEnabled;
     public bool CraftZoneEnabled;
     public Items[] itemsCraft;
     public Transform CraftPos;
@@ -25,21 +25,29 @@ public class CraftSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("c"))
+        if(Input.GetKeyDown("c"))
         {
-            CraftZoneEnabled =! CraftZoneEnabled;
-            Debug.Log(CraftZoneEnabled);
-            if (CraftZoneEnabled)
+            Debug.Log(GetComponent<Inventario>().prendido());
+            if(!GetComponent<Inventario>().inventotyEnabled)
             {
-                CraftZone.SetActive(true);
-                //inventario.inventory.SetActive(false);
-                Cursor.lockState = CursorLockMode.None;
+                CraftZoneEnabled =! CraftZoneEnabled;
+                if (CraftZoneEnabled)
+                {
+                    CraftZone.SetActive(true);
+                    GetComponent<Inventario>().craftEnabled = true;
+                    Cursor.lockState = CursorLockMode.None;
+                }
+                else
+                {
+                    CraftZone.SetActive(false);
+                    GetComponent<Inventario>().craftEnabled = false;
+                    Cursor.lockState = CursorLockMode.Locked;
+                }
             }
-            else
-            {
-                CraftZone.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked;
-            } 
+        }
+        if(CraftZoneEnabled)
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
