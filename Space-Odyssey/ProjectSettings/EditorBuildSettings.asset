@@ -44,4 +44,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 238e6fbd1e7dd6046a91c6aaf79071c5
+  - enabled: 1
+    path: Assets/Scenes/Planetas/Alolea.unity
+    guid: 39b3ece8097c45644a7aacdd1af2c3a2
+  - enabled: 1
+    path: Assets/Scenes/Planetas/Orange.unity
+    guid: c42c58179cd0a254e8ece8bea0840e38
+  - enabled: 1
+    path: Assets/Scenes/Planetas/Egipt.unity
+    guid: 1109b6246701c9741857fc867d6af87f
+  - enabled: 1
+    path: Assets/Scenes/Planetas/Havay.unity
+    guid: 7990f9feab5bcb143b9425fcd6a1be82
+  - enabled: 1
+    path: Assets/Scenes/Planetas/Ice.unity
+    guid: 575233b06701fd94a8182791a59997e2
   m_configObjects: {}
