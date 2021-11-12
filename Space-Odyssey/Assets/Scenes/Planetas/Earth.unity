@@ -67099,8 +67099,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVida: 100
   oxigeno: 100
-  oxigenoPorSegundo: 0.001
-  oxigenoPorMovimiento: 0.1
+  oxigenoPorSegundo: 0.1
+  oxigenoPorMovimiento: 1
 --- !u!114 &1532194635
 MonoBehaviour:
   m_ObjectHideFlags: 0

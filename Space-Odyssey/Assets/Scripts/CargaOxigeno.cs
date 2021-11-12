@@ -45,7 +45,7 @@ public class CargaOxigeno : MonoBehaviour
     		if(distancia < 50) {
     			if(oxigenoActual < 100) {
     			
-    			jugador.GetComponent<Variables>().aumentarOxigeno(0.01f);
+    			jugador.GetComponent<Variables>().aumentarOxigeno(0.1f);
 
     		}
     		}
