@@ -1890,6 +1890,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &89072762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89072758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 0
 --- !u!1 &94548642
 GameObject:
   m_ObjectHideFlags: 0
@@ -60603,6 +60617,7 @@ GameObject:
   - component: {fileID: 808130766508412821}
   - component: {fileID: 808130766508412820}
   - component: {fileID: 808130766508412823}
+  - component: {fileID: 808130766508412824}
   m_Layer: 0
   m_Name: Planta
   m_TagString: Item
@@ -60673,6 +60688,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 1.9445081, z: 4}
   m_Center: {x: 0, y: 1.3722539, z: 0}
+--- !u!114 &808130766508412824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808130766508412819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!1 &819149726075658190
 GameObject:
   m_ObjectHideFlags: 0
@@ -61477,6 +61506,7 @@ GameObject:
   - component: {fileID: 2784670306290903670}
   - component: {fileID: 2784670306290903669}
   - component: {fileID: 2784670306290903672}
+  - component: {fileID: 2784670306290903673}
   m_Layer: 0
   m_Name: Plata
   m_TagString: Item
@@ -61547,6 +61577,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.08, z: 0.23}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2784670306290903673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2784670306290903668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!1 &2804322229366142974
 GameObject:
   m_ObjectHideFlags: 0
@@ -62562,6 +62606,7 @@ GameObject:
   - component: {fileID: 4633776158143703524}
   - component: {fileID: 4633776158143703523}
   - component: {fileID: 4633776158143703526}
+  - component: {fileID: 4633776158143703527}
   m_Layer: 0
   m_Name: Botella de Agua_
   m_TagString: Item
@@ -62632,6 +62677,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.21408884, z: 0.08}
   m_Center: {x: 0.000000059604645, y: 0.10704442, z: 0}
+--- !u!114 &4633776158143703527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633776158143703522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!4 &4685775224538463190
 Transform:
   m_ObjectHideFlags: 0
@@ -63030,6 +63089,7 @@ GameObject:
   - component: {fileID: 5669151045060884208}
   - component: {fileID: 5669151045060884207}
   - component: {fileID: 5669151045060884210}
+  - component: {fileID: 5669151045060884211}
   m_Layer: 0
   m_Name: Petroleo
   m_TagString: Item
@@ -63100,6 +63160,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.006641256, y: 0.017795663, z: 0.01850579}
   m_Center: {x: 0, y: 0, z: -0.00045277164}
+--- !u!114 &5669151045060884211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5669151045060884206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!4 &5792862574949161256
 Transform:
   m_ObjectHideFlags: 0
@@ -63373,6 +63447,7 @@ GameObject:
   - component: {fileID: 6244876378285285746}
   - component: {fileID: 6244876378285285745}
   - component: {fileID: 6244876378285285748}
+  - component: {fileID: 6244876378285285749}
   m_Layer: 0
   m_Name: Cobre
   m_TagString: Item
@@ -63443,6 +63518,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.08, z: 0.23}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6244876378285285749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6244876378285285744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!1 &6277562270340650750
 GameObject:
   m_ObjectHideFlags: 0
@@ -64575,6 +64664,7 @@ GameObject:
   - component: {fileID: 7787207560074249604}
   - component: {fileID: 7787207560074249603}
   - component: {fileID: 7787207560074249602}
+  - component: {fileID: 7787207560074249606}
   m_Layer: 0
   m_Name: Balde (NO BORRAR) (1)
   m_TagString: Item
@@ -64645,6 +64735,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7787207560074249606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7787207560074249601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!1 &7807409178857857200
 GameObject:
   m_ObjectHideFlags: 0
@@ -64674,6 +64778,7 @@ GameObject:
   - component: {fileID: 7842989985534866623}
   - component: {fileID: 7842989985534866622}
   - component: {fileID: 7842989985534866625}
+  - component: {fileID: 7842989985534866626}
   m_Layer: 0
   m_Name: Lata
   m_TagString: Item
@@ -64744,6 +64849,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0233364, y: 0.8036523, z: 2.0258253}
   m_Center: {x: -0.0021805072, y: -0.42189416, z: 0.002336727}
+--- !u!114 &7842989985534866626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7842989985534866621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!4 &7850148148679048413
 Transform:
   m_ObjectHideFlags: 0
@@ -72899,6 +73018,7 @@ GameObject:
   - component: {fileID: 8024877903318784249}
   - component: {fileID: 8024877903318784248}
   - component: {fileID: 8024877903318784251}
+  - component: {fileID: 8024877903318784252}
   m_Layer: 0
   m_Name: Hierro
   m_TagString: Item
@@ -72969,6 +73089,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.08, z: 0.23}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8024877903318784252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8024877903318784247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!1 &8071130260203791987
 GameObject:
   m_ObjectHideFlags: 0
@@ -72982,6 +73116,7 @@ GameObject:
   - component: {fileID: 8071130260203791990}
   - component: {fileID: 8071130260203791989}
   - component: {fileID: 8071130260203791988}
+  - component: {fileID: 8071130260203791992}
   m_Layer: 0
   m_Name: Mejora
   m_TagString: Untagged
@@ -73052,6 +73187,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.67, y: 0.36, z: 0.35}
   m_Center: {x: 0, y: 0.17, z: 0}
+--- !u!114 &8071130260203791992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8071130260203791987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!1 &8080522472153491666
 GameObject:
   m_ObjectHideFlags: 0
@@ -73065,6 +73214,7 @@ GameObject:
   - component: {fileID: 8080522472153491668}
   - component: {fileID: 8080522472153491667}
   - component: {fileID: 8080522472153491670}
+  - component: {fileID: 8080522472153491671}
   m_Layer: 0
   m_Name: Gasolina
   m_TagString: Item
@@ -73135,6 +73285,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.19469735, y: 0.19646494, z: 0.33011815}
   m_Center: {x: -0.0008838431, y: 0.0008837521, z: 0.23271868}
+--- !u!114 &8080522472153491671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8080522472153491666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!33 &8096754048361839007
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -73722,6 +73886,7 @@ GameObject:
   - component: {fileID: 9148907682929031889}
   - component: {fileID: 9148907682929031888}
   - component: {fileID: 9148907682929031891}
+  - component: {fileID: 9148907682929031892}
   m_Layer: 0
   m_Name: Titaneo
   m_TagString: Item
@@ -73792,6 +73957,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.08, z: 0.23}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9148907682929031892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9148907682929031887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178ca6690dccdb540994962d12c79df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotation: {x: 0, y: 0, z: 0}
+  _speed: 50
 --- !u!4 &9159201758151988954
 Transform:
   m_ObjectHideFlags: 0
