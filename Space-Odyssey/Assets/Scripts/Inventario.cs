@@ -2,20 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 
 
 public class Inventario : MonoBehaviour
 {
 
-    private bool inventotyEnabled;
+    public CraftSystem craft;
     public GameObject inventory;
     private int allSlots;
     private int enabledSlots;
     private GameObject[] slot;
     public GameObject slotHolder;
     private GameObject aux;
+    public bool inventotyEnabled;
 
+
+    public bool prendido()
+    {
+        return inventotyEnabled;
+    }
     void Start()
     {
         allSlots = slotHolder.transform.childCount;
@@ -34,18 +40,23 @@ public class Inventario : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("i")){
+        if (Input.GetKeyDown("i"))
+        {   
             inventotyEnabled =! inventotyEnabled;
+            if (inventotyEnabled)
+            {
+                inventory.SetActive(true);
+                //craft.CraftZone.SetActive(false);
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                inventory.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
 
-        if (inventotyEnabled){
-            inventory.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else{
-            inventory.SetActive(false);
-            //Cursor.lockState = CursorLockMode.Locked;
-        }
+        
 
     }
 

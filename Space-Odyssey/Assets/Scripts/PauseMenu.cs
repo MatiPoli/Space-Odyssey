@@ -8,19 +8,25 @@ public class PauseMenu : MonoBehaviour
     public GameObject hud;
     public static bool GameIsPaused = false;
 
+
+    public GameObject player;
     public GameObject PauseMenuUI;
     
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if(GameIsPaused)
+            if(!player.GetComponent<Inventario>().prendido()&&!player.GetComponent<CraftSystem>().prendido())
             {
+                if(GameIsPaused)
+                {
                 Resume();
-            }else
-            {
+                }else
+                {
                 Pause();
+                }
             }
+            
         }
     }
     public void SaliiR()           //Fuction to exit
