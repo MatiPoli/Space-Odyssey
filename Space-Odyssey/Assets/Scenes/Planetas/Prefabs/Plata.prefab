@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42df2fdfb3a370342967f1e039745c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 6
+  ID: 15
   type: Ore
   descripcion: Lingote de plata
   icon: {fileID: 21300000, guid: 59e4064224e125942be8981a005893dc, type: 3}
