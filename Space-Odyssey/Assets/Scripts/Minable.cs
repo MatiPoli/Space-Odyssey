@@ -8,6 +8,7 @@ public class Minable : MonoBehaviour
 {
     public GameObject myPrefab;
     public GameObject Personaje;
+    public Canvas fondo;
     private float distancia;
     private Renderer render;
     public Rigidbody rb;
@@ -17,6 +18,8 @@ public class Minable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        fondo.GetComponent<Canvas>().enabled = false;
+
         rb = this.GetComponent<Rigidbody>();
         render = gameObject.GetComponent<Renderer>();
 
@@ -31,6 +34,7 @@ public class Minable : MonoBehaviour
         {   
             GameObject instantiatedObject = Instantiate(myPrefab, this.transform.position, this.transform.rotation, null);
             instantiatedObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+
             Destroy(gameObject);
         }
     }
@@ -40,10 +44,41 @@ public class Minable : MonoBehaviour
         float maxDistance = 10;
 
         if(cont == 3){
+
             DestroyGameObject();
 
         }
 
         cont ++;
+    }
+
+    void OnMouseEnter()
+    {
+        distancia = GetComponent<DistEntreObj>().calcularDistancia();
+
+        if(distancia<=50.0f) {
+            fondo.GetComponent<Canvas>().enabled = true;
+        }
+    }
+
+    void OnMouseOver()
+    {
+        distancia = GetComponent<DistEntreObj>().calcularDistancia();
+
+        if(distancia > 50.0f) {
+            fondo.GetComponent<Canvas>().enabled = false;
+        } else {
+            fondo.GetComponent<Canvas>().enabled = true;
+        }
+    }
+
+    void OnMouseExit()
+    {
+        fondo.GetComponent<Canvas>().enabled = false;
+    }
+
+    void OnDestroy(){
+        fondo.GetComponent<Canvas>().enabled = false;
+
     }
 }

@@ -7,12 +7,12 @@ public class AparecerCombustible : MonoBehaviour
 
 	public GameObject myPrefab;
 	public Transform respawn;
-	//private Transform pos;
+	public Canvas fondo;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        fondo.GetComponent<Canvas>().enabled = false;
     }
 
     // Update is called once per frame
@@ -21,6 +21,12 @@ public class AparecerCombustible : MonoBehaviour
     	float distancia;
 
     	distancia = this.GetComponent<DistEntreObj>().calcularDistancia();
+
+        if(distancia <=  50.0f) {
+            fondo.GetComponent<Canvas>().enabled = true;
+        } else {
+            fondo.GetComponent<Canvas>().enabled = false;
+        }
 
     	if(Input.GetKeyDown("p")){
 	    	if(distancia <= 30.0f){

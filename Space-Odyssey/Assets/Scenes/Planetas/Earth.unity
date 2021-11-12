@@ -221,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &4329906
@@ -676,6 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &8673445
@@ -1074,6 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &35214193
@@ -1290,6 +1293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &48760248
@@ -1686,7 +1690,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 901169832}
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1747,6 +1752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &63306257
@@ -1931,6 +1937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &63308899
@@ -2185,6 +2192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!1 &84530662 stripped
@@ -2500,6 +2508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &100303991
@@ -3217,6 +3226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &133698822
@@ -3443,6 +3453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &135948991
@@ -3790,6 +3801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &141070086
@@ -4807,6 +4819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &199925379
@@ -5742,6 +5755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &267394789
@@ -5926,6 +5940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &274839169
@@ -12127,6 +12142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &370021457
@@ -12345,6 +12361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &383204797
@@ -13248,6 +13265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &440187508
@@ -13576,6 +13594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &483730519
@@ -13897,6 +13916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &506016017
@@ -14081,6 +14101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &517283239
@@ -14403,6 +14424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &533596266
@@ -14905,6 +14927,105 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &553957738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553957742}
+  - component: {fileID: 553957741}
+  - component: {fileID: 553957740}
+  - component: {fileID: 553957739}
+  m_Layer: 5
+  m_Name: FondoMinado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &553957739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553957738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &553957740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553957738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &553957741
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553957738}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &553957742
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553957738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1973754053}
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &557031149
 GameObject:
   m_ObjectHideFlags: 0
@@ -15491,6 +15612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &616573796
@@ -16363,6 +16485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &645995902
@@ -16964,6 +17087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &663471029
@@ -17605,6 +17729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &683396511
@@ -18518,6 +18643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &736596738
@@ -18689,6 +18815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &743851987
@@ -24091,7 +24218,7 @@ Transform:
   m_GameObject: {fileID: 780656649}
   m_LocalRotation: {x: 0.53708297, y: -0.28330973, z: 0.17677316, w: 0.77461517}
   m_LocalPosition: {x: -187.6, y: 276.1, z: 422.9}
-  m_LocalScale: {x: 7.049107, y: 7.049107, z: 7.049107}
+  m_LocalScale: {x: 7.401562, y: 7.401562, z: 7.401562}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
@@ -24123,6 +24250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 5669151045060884206}
   respawn: {fileID: 1166475190}
+  fondo: {fileID: 824389540}
 --- !u!1 &781061191
 GameObject:
   m_ObjectHideFlags: 0
@@ -24206,6 +24334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &782516230
@@ -24527,6 +24656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &789550459
@@ -25311,6 +25441,105 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 516c2e61632a08748ae34e11746114b0, type: 3}
+--- !u!1 &824389537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824389541}
+  - component: {fileID: 824389540}
+  - component: {fileID: 824389539}
+  - component: {fileID: 824389538}
+  m_Layer: 5
+  m_Name: FondoMinar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &824389538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824389537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &824389539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824389537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &824389540
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824389537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &824389541
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824389537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1631107496}
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &833663068
 GameObject:
   m_ObjectHideFlags: 0
@@ -25444,6 +25673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &835142886
@@ -25615,6 +25845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &838560158
@@ -26124,6 +26355,85 @@ Transform:
   m_Father: {fileID: 2014788282}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &901169831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901169832}
+  - component: {fileID: 901169834}
+  - component: {fileID: 901169833}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &901169832
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901169831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 56903233}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 61}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &901169833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901169831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Presiona P para recoger el agua
+--- !u!222 &901169834
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901169831}
+  m_CullTransparentMesh: 0
 --- !u!1 &902644619
 GameObject:
   m_ObjectHideFlags: 0
@@ -26447,7 +26757,7 @@ Transform:
   m_GameObject: {fileID: 921160533}
   m_LocalRotation: {x: 0.21021786, y: -0.14395759, z: 0.11513741, w: 0.9601188}
   m_LocalPosition: {x: -87.6, y: 446.3, z: 298.5}
-  m_LocalScale: {x: 5.777047, y: 5.777047, z: 5.777047}
+  m_LocalScale: {x: 6.565614, y: 6.565614, z: 6.565614}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
@@ -26466,6 +26776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 5669151045060884206}
   respawn: {fileID: 1019060266}
+  fondo: {fileID: 824389540}
 --- !u!114 &921160540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26705,6 +27016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &943091524
@@ -27529,6 +27841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1002703984
@@ -27687,6 +28000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1005032787
@@ -29045,6 +29359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1073376069
@@ -34931,6 +35246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1128726341
@@ -35781,6 +36097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1195253621
@@ -36213,6 +36530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1215381440
@@ -36384,6 +36702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1218025167
@@ -37959,6 +38278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1307721787
@@ -38337,6 +38657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1320731145
@@ -38762,6 +39083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1334655180
@@ -39388,6 +39710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1375246013
@@ -46417,6 +46740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1504720867
@@ -47808,6 +48132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1540819844
@@ -48994,6 +49319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1615153733
@@ -49429,6 +49755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1628219559
@@ -49665,6 +49992,85 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &1631107495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1631107496}
+  - component: {fileID: 1631107498}
+  - component: {fileID: 1631107497}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1631107496
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631107495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 824389541}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1631107497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631107495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9811321, g: 0.96724814, b: 0.96724814, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Presione "P" para generar petroleo
+--- !u!222 &1631107498
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631107495}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1634601084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50255,6 +50661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1672751679
@@ -50457,6 +50864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1677073781
@@ -51066,6 +51474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 5669151045060884206}
   respawn: {fileID: 1166475190}
+  fondo: {fileID: 0}
 --- !u!4 &1735502061
 Transform:
   m_ObjectHideFlags: 0
@@ -51987,6 +52396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 6244876378285285744}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1808390591
@@ -52178,6 +52588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1811445220
@@ -52499,6 +52910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1830807011
@@ -52996,6 +53408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1862590075
@@ -53235,6 +53648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1869363336
@@ -53541,6 +53955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1890771576
@@ -54192,6 +54607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1934544078
@@ -54394,6 +54810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1943295106
@@ -59641,6 +60058,85 @@ Transform:
   m_Father: {fileID: 5105099}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1973754052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1973754053}
+  - component: {fileID: 1973754055}
+  - component: {fileID: 1973754054}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1973754053
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973754052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 553957742}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 41}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1973754054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973754052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Haz click varias veces para minar.
+--- !u!222 &1973754055
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973754052}
+  m_CullTransparentMesh: 0
 --- !u!1 &1983280517
 GameObject:
   m_ObjectHideFlags: 0
@@ -59786,6 +60282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &1996266252
@@ -60399,6 +60896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &2040276533
@@ -60731,6 +61229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 5669151045060884206}
   respawn: {fileID: 1019060266}
+  fondo: {fileID: 0}
 --- !u!4 &2046455627
 Transform:
   m_ObjectHideFlags: 0
@@ -60841,6 +61340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &2047363228
@@ -61169,6 +61669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &2077567801
@@ -62154,6 +62655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &2143825126
@@ -64393,6 +64895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 8024877903318784247}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &4559985107102614744
@@ -65579,6 +66082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 2784670306290903668}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &6652291635565637794
@@ -65929,6 +66433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 808130766508412819}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &7126452751879549731
@@ -66441,6 +66946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myPrefab: {fileID: 9148907682929031887}
   Personaje: {fileID: 1532194632}
+  fondo: {fileID: 553957741}
   rb: {fileID: 0}
   Branch_01: {fileID: 0}
 --- !u!114 &7741421939281795766
