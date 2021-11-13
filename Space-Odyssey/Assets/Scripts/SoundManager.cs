@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] Slider volumeSlider;
+    [SerializeField] Slider volumeSlider=null;
    
     void Start()
     {
