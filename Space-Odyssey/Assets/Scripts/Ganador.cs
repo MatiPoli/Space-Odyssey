@@ -79,7 +79,7 @@ public class Ganador : MonoBehaviour
 
         if(distancia <= 70.0f) {
         	Debug.Log("ganaste");
-       		SceneManager.LoadScene (sceneName:"You win"); //HABRIA QUE CARGAR OTRA ESCENA CON CARACTERISTICAS SIMILARES A GAMEOVER
+       		SceneManager.LoadScene ("Scenes/Menus/You win"); //HABRIA QUE CARGAR OTRA ESCENA CON CARACTERISTICAS SIMILARES A GAMEOVER
        	}
     }
 }

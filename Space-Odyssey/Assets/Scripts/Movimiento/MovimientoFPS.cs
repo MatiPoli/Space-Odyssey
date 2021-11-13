@@ -28,6 +28,7 @@ public class MovimientoFPS : MonoBehaviour
 
 
     // Linterna
+    [Header("Linterna")]
     public Light flashlight;
     
     [Header("Mouse")]
@@ -38,6 +39,16 @@ public class MovimientoFPS : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        #region Manejo de errores
+        if (animator == null)
+            Debug.LogWarning("No se a seleccionado un Animator para el personaje",animator);
+        if (cam == null)
+            Debug.LogWarning("No se a seleccionado una camara para el personaje",cam);
+        if (groundCheck == null)
+            Debug.LogWarning("El personaje no podra saltar sin un groundCheck",groundCheck);
+        if (groundMask.value==0)
+            Debug.LogWarning("groundMask seleccionado en Nothing, el personaje no saltara bajo estas condiciones", this);
+        #endregion
     }
 
     // Start is called before the first frame update
@@ -81,23 +92,29 @@ public class MovimientoFPS : MonoBehaviour
     {
 
         #region Animaciones de caminata
-        bool isWalking = false, isWalkingBackwards = false;
-        if (direcson.z > 0)
-            isWalking = true;
-        if (direcson.z < 0)
-            isWalkingBackwards = true;
+        if (animator!=null)
+        {
+            bool isWalking = false, isWalkingBackwards = false;
+            if (direcson.z > 0)
+                isWalking = true;
+            if (direcson.z < 0)
+                isWalkingBackwards = true;
 
-        if (animator.GetBool("isWalking") != isWalking)
-            animator.SetBool("isWalking", isWalking);
-        if (animator.GetBool("isWalkingBackwards") != isWalkingBackwards)
-            animator.SetBool("isWalkingBackwards", isWalkingBackwards);
+            if (animator.GetBool("isWalking") != isWalking)
+                animator.SetBool("isWalking", isWalking);
+            if (animator.GetBool("isWalkingBackwards") != isWalkingBackwards)
+                animator.SetBool("isWalkingBackwards", isWalkingBackwards);
+        }
         #endregion
 
         #region Movimiento de camara
-        transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * Time.deltaTime * sensibilidadHorizontal);
-        verticalLookRotation += Input.GetAxis("Mouse Y") * Time.deltaTime * sensibilidadVertical;
-        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -60, 60);
-        cam.localEulerAngles = Vector3.left * verticalLookRotation;
+        if (cam != null)
+        {
+            transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * Time.deltaTime * sensibilidadHorizontal);
+            verticalLookRotation += Input.GetAxis("Mouse Y") * Time.deltaTime * sensibilidadVertical;
+            verticalLookRotation = Mathf.Clamp(verticalLookRotation, -60, 60);
+            cam.localEulerAngles = Vector3.left * verticalLookRotation;
+        }
         #endregion
 
         #region Movimiento de Personaje
@@ -107,13 +124,14 @@ public class MovimientoFPS : MonoBehaviour
 
         #region Salto
         bool en_piso = enPiso();
-        if (en_piso)
+        if (en_piso && animator!=null)
             animator.SetBool("isJumping", false);
         if (Input.GetKey(KeyCode.Space))
         {
             if (en_piso)
             {
-                animator.SetBool("isJumping", true);
+                if(animator!=null)
+                    animator.SetBool("isJumping", true);
                 saltar();
             }
         }
@@ -122,6 +140,8 @@ public class MovimientoFPS : MonoBehaviour
 
     bool enPiso()
     {
+        if (groundCheck == null)
+            return false;
         return Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
     }
 

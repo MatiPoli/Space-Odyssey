@@ -18,10 +18,7 @@ public class VolverNave : MonoBehaviour
     void Update()
     {
         if (playerEstaCerca() && Input.GetKey(teclaEscape))
-        {
-            Debug.Log("Volviendo");
             SceneManager.LoadScene("Scenes/Espacio");
-        }
     }
 
     bool playerEstaCerca()

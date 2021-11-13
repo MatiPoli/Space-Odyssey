@@ -44,15 +44,8 @@ public class Minable : MonoBehaviour
 
     void OnMouseDown()
     {
-        float maxDistance = 10;
-
-        if(cont == 3){
-
+        if(++cont >= 3)
             DestroyGameObject();
-
-        }
-
-        cont ++;
     }
 
     void OnMouseEnter()

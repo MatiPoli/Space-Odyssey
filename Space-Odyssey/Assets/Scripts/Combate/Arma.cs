@@ -14,9 +14,7 @@ public abstract class Arma : MonoBehaviour
     {
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb)
-        {
             rb.isKinematic = true;
-        }
     }
 
     protected bool attackReady()

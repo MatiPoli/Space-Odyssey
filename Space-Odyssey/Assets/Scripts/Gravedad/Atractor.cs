@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Atractor : MonoBehaviour
 {
-    public float G = 100000;
+    public float G = 100;
 
     // Start is called before the first frame update
     public void atraer(GameObject body)
