@@ -49,7 +49,7 @@ public class PauseEspacio : MonoBehaviour
     {
         Time.timeScale = 1f;
         GameIsPaused = false;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Scenes/Menus/Menu");
     }
 
    

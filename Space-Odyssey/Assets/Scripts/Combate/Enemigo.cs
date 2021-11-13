@@ -26,9 +26,6 @@ public class Enemigo : DamageTarget
 
     [Header("IA")]
     public float rangoVision;
-    public float esperaEntreMovimiento;
-
-    float tiempoDesdeMovimiento = 0;
 
     void Awake()
     {
@@ -72,21 +69,6 @@ public class Enemigo : DamageTarget
     bool targetOnSight()
     {
         return (target.position - arma.attackOrigin.position).magnitude <= rangoVision;
-    }
-
-    void wander()
-    {
-        tiempoDesdeMovimiento += Time.deltaTime;
-        if (tiempoDesdeMovimiento < esperaEntreMovimiento)
-        {
-            //mover(Vector3.zero);
-            return;
-        }
-        tiempoDesdeMovimiento = 0;
-        Vector3[] directions = new Vector3[] { transform.forward, transform.right};
-        int dir = Random.Range(-1, 1);
-        int i = Random.Range(0, directions.Length-1);
-        mover(dir * directions[i]);
     }
 
     void mover(Vector3 direcson)
